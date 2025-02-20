@@ -19,12 +19,7 @@ const LandingPage: NextPage = () => {
     alert('Checking availability!'); // Example action
   };
 
-  return (
-    
-    
-    
-    
-    
+  return (    
     <div className={styles.landingPage}>
       {/* Top Bar */}
       <div className={styles.topBar}>
@@ -33,7 +28,7 @@ const LandingPage: NextPage = () => {
           <div className={styles.text5}>Languages</div>
         </div>
         <div className={styles.signin} onClick={onComponent4ContainerClick}>
-          <Image className={styles.component1Icon} width={20} height={20} alt="" src="/images/Clogin-icon.png" />
+          <Image className={styles.component1Icon} width={20} height={20} alt="" src="/images/login-icon.png" />
           <div className={styles.text12}>Sign in or Join</div>
         </div>
       </div>
