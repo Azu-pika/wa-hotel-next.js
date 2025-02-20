@@ -1,0 +1,524 @@
+/* index.module.css */
+
+/* General Styles */
+.explore {
+    width: 100%;
+    position: relative;
+    background-color: #d4dabc;
+    height: 827px;
+    text-align: left;
+    font-size: 16px;
+    color: #4b5563;
+    font-family: Lora;
+  }
+  
+  .text {
+      position: relative;
+      line-height: 28px;
+  }
+  
+  /* Navigation Bar Styles */
+  .nav {
+      width: 100%;
+      position: relative;
+      background-color: #fff;
+      border-top: 3px solid #d4dabc;
+      border-bottom: 3px solid #d4dabc;
+      box-sizing: border-box;
+      height: 80px;
+      text-align: left;
+      font-size: 24px;
+      color: #4b5563;
+      font-family: Lora;
+  }
+  
+  .container {
+      position: absolute;
+      top: calc(50% - 35px);
+      left: 60px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 8px;
+      font-size: 37px;
+      font-family: 'Klee One';
+  }
+  
+  .waIcon1 {
+      width: 70px;
+      position: relative;
+      height: 70px;
+      object-fit: cover;
+  }
+  
+  .div {
+      width: 124px;
+      position: relative;
+      line-height: 32px;
+      display: flex;
+      align-items: center;
+      height: 42px;
+      flex-shrink: 0;
+  }
+  
+  .navigationBar {
+      position: absolute;
+      top: calc(50% - 18px);
+      left: 1018px;
+      width: 649px;
+      height: 36px;
+      font-size: 18px;
+  }
+  
+  .home {
+      position: absolute;
+      top: 4px;
+      left: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+  }
+  
+  .rooms {
+      position: absolute;
+      top: 4px;
+      left: 94px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+  }
+  
+  .restaurant {
+      position: absolute;
+      top: 4px;
+      left: 182px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+  }
+  
+  .recreation {
+      position: absolute;
+      top: 4px;
+      left: 304px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+  }
+  
+  .offer {
+      position: absolute;
+      top: 4px;
+      left: 426px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+  }
+  
+  .component4 {
+      position: absolute;
+      top: calc(50% - 25px);
+      left: calc(50% + 667.5px);
+      box-shadow: 4px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 4px 4px -2px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      background-color: #3d73b5;
+      width: 145px;
+      height: 49px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 16px;
+      box-sizing: border-box;
+      cursor: pointer;
+      text-align: center;
+      color: #fff;
+  }
+  
+  /* Welcome Section Styles */
+  .welcomSection {
+      width: 100%;
+      position: relative;
+      height: 886px;
+      text-align: left;
+      font-size: 18px;
+      color: #374151;
+      font-family: Lora;
+  }
+  
+  .heading2 {
+      position: absolute;
+      top: 86px;
+      left: calc(50% - 788.5px);
+      font-size: 64px;
+      line-height: 48px;
+      font-weight: 600;
+      color: #4b5563;
+      text-align: center;
+  }
+  
+  .ajisaiPicIcon {
+      position: absolute;
+      top: 184px;
+      left: 63px;
+      width: 333px;
+      height: 637px;
+      object-fit: cover;
+  }
+  
+  .shoujiPicIcon {
+      position: absolute;
+      top: 367px;
+      left: 465px;
+      width: 341px;
+      height: 454px;
+      object-fit: cover;
+  }
+  
+  .austinCurtisPjh6jktzggkUnspIcon {
+      position: absolute;
+      top: 110px;
+      left: 910px;
+      width: 747px;
+      height: 522px;
+      object-fit: cover;
+  }
+  
+  .immerseYourselfInContainer {
+      position: absolute;
+      top: 681px;
+      left: 941px;
+      line-height: 29.25px;
+      display: flex;
+      align-items: center;
+      width: 654px;
+  }
+  
+  .immerseYourselfInContainer1 {
+      width: 100%;
+  }
+  
+  .immerseYourselfInTheSerene {
+      margin: 0;
+  }
+  
+  .immerseYourselfIn {
+      font-size: 24px;
+  }
+  
+  /* Room Styles */
+  .rooms {
+      width: 100%;
+      position: relative;
+      background-color: #d4dabc;
+      height: 1118px;
+      text-align: left;
+      font-size: 16px;
+      color: #4b5563;
+      font-family: Lora;
+  }
+  
+  .roomPicIcon {
+      position: absolute;
+      top: 90px;
+      left: 879px;
+      width: 684px;
+      height: 405px;
+      object-fit: cover;
+  }
+  
+  .heading2 {
+      position: absolute;
+      top: 99px;
+      left: calc(50% - 692px);
+      font-size: 64px;
+      line-height: 48px;
+      font-weight: 600;
+      text-align: center;
+  }
+  
+  .weTakePrideContainer {
+      position: absolute;
+      top: 246px;
+      left: 203px;
+      line-height: 29.25px;
+      color: #374151;
+      display: flex;
+      align-items: center;
+      width: 556px;
+      height: 166px;
+      font-size: 24px;
+  }
+  
+  .weTakePrideContainer1 {
+      width: 100%;
+  }
+  
+  .whetherYouSeek {
+      margin: 0;
+      font-size: 18px;
+  }
+  
+  .weTakePride {
+      margin: 0;
+  }
+  
+  .traditionalTatamiRoom {
+      position: absolute;
+      top: 551px;
+      left: 25px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 8px;
+      background-color: #fff;
+      width: 400px;
+      height: 429px;
+      overflow: hidden;
+      cursor: pointer;
+  }
+  
+  .tatamiIcon {
+      position: absolute;
+      top: -1px;
+      left: 0px;
+      width: 400px;
+      height: 312px;
+      object-fit: cover;
+  }
+  
+  .immerseYourselfIn {
+      position: absolute;
+      top: 358px;
+      left: 29px;
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+      width: 352px;
+  }
+  
+  .mountainViewRoom {
+      position: absolute;
+      top: 551px;
+      left: 452px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 8px;
+      background-color: #fff;
+      width: 400px;
+      height: 429px;
+      overflow: hidden;
+  }
+  
+  .mountainViewRoom1 {
+      position: absolute;
+      top: 0px;
+      left: -79px;
+      width: 558.1px;
+      height: 311px;
+      object-fit: cover;
+  }
+  
+  .enjoyStunningVistas {
+      position: absolute;
+      top: 358px;
+      left: 29px;
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+      width: 319px;
+  }
+  
+  .familySuite {
+      position: absolute;
+      top: 551px;
+      left: 879px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 8px;
+      background-color: #fff;
+      width: 400px;
+      height: 429px;
+      overflow: hidden;
+  }
+  
+  .familySuiteIcon {
+      position: absolute;
+      top: 0px;
+      left: -13px;
+      width: 413px;
+      height: 311px;
+      object-fit: cover;
+  }
+  
+  .spaciousAndCozy {
+      position: absolute;
+      top: 358px;
+      left: 29px;
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+      width: 327px;
+  }
+  
+  .deluxeSuite {
+      position: absolute;
+      top: 551px;
+      left: 1306px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 8px;
+      background-color: #fff;
+      width: 400px;
+      height: 429px;
+      overflow: hidden;
+      cursor: pointer;
+  }
+  
+  .deluxeSuiteIcon {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 400px;
+      height: 311px;
+      object-fit: cover;
+  }
+  
+  .indulgeInLuxury {
+      position: absolute;
+      top: 358px;
+      left: 29px;
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+      width: 347px;
+  }
+  
+  .heading3 {
+      position: absolute;
+      top: 322px;
+      left: 29px;
+      font-size: 24px;
+      line-height: 28px;
+      font-weight: 600;
+  }
+  
+  .component4 {
+      position: absolute;
+      top: 1021px;
+      right: 103px;
+      box-shadow: 7px 0px 6px rgba(0, 0, 0, 0.1), 0px 5px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      background-color: #246c43;
+      overflow: hidden;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-end;
+      padding: 12px 24px;
+      cursor: pointer;
+      text-align: center;
+      font-size: 24px;
+      color: #fff;
+  }
+  
+  .text {
+      width: 328px;
+      position: relative;
+      line-height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+  }
+  
+  /* Restaurant Styles */
+  .restrant {
+      width: 100%;
+      position: relative;
+      height: 740px;
+      text-align: left;
+      font-size: 18px;
+      color: #374151;
+      font-family: Lora;
+  }
+  
+  .heading2 {
+      position: absolute;
+      top: 75px;
+      left: calc(50% - 680.5px);
+      font-size: 64px;
+      line-height: 48px;
+      font-weight: 600;
+      color: #4b5563;
+      text-align: center;
+  }
+  
+  .discoverTheTrueContainer {
+      position: absolute;
+      top: 495px;
+      left: 829px;
+      line-height: 29.25px;
+      display: flex;
+      align-items: center;
+      width: 703px;
+      height: 186px;
+  }
+  
+  .discoverTheTrueContainer1 {
+      width: 100%;
+  }
+  
+  .ourChefsAt {
+      margin: 0;
+  }
+  
+  .discoverTheTrue {
+      margin: 0;
+      font-size: 24px;
+  }
+  
+  .cuisineIcon {
+      position: absolute;
+      top: 174px;
+      left: 64px;
+      width: 623px;
+      height: 498px;
+      object-fit: cover;
+  }
+  
+  .richardIwaki2cpx1n7us5qUnspIcon {
+      position: absolute;
+      top: 143px;
+      left: 766px;
+      width: 295px;
+      height: 322px;
+      object-fit: cover;
+  }
+  
+  .haleyTruongUcvxv6bn2z8UnsplIcon {
+      position: absolute;
+      top: 143px;
+      left: 1128px;
+      width: 248px;
+      height: 322px;
+      object-fit: cover;
+  }
+  
+  .codyChanKaoi0tktabaUnsplashIcon {
+      position: absolute;
+      top: 143px;
+      left: 1443px;
+      width: 248px;
+      height: 322px;
+      object-fit: cover;
+  }
+  
+  /* Explore Styles */
+  .relaxInOurNaturalOnsenHotParent {
+      position: absolute;
+      top: 176px;
+      left:
+  
