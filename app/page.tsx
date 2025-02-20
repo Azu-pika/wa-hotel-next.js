@@ -33,31 +33,29 @@ const LandingPage: NextPage = () => {
         </div>
       </div>
 
+
       {/* Navigation Bar */}
       <div className={styles.nav}>
-        <div className={styles.component41} onClick={onComponent4ContainerClick}>
-          <div className={styles.text5}>Book Now</div>
+        <div className={styles.container1}>
+          <Image className={styles.waIcon1} width={70} height={70} alt="" src="/images/wa-icon.png" />
+          <div className={styles.div}>和旅館</div>
         </div>
         <div className={styles.navigationBar}>
-          <div className={styles.offer}>
-            <div className={styles.text5}>Explore</div>
-          </div>
-          <div className={styles.recreation}>
-            <div className={styles.text5}>Recreation</div>
-          </div>
-          <div className={styles.restaurant}>
-            <div className={styles.text5}>Restaurant</div>
+          <div className={styles.home}>
+            <div className={styles.text5}>Home</div>
           </div>
           <div className={styles.rooms1}>
             <div className={styles.text5}>Rooms</div>
           </div>
-          <div className={styles.home}>
-            <div className={styles.text5}>Home</div>
+          <div className={styles.restaurant}>
+            <div className={styles.text5}>Restaurant</div>
+          </div>
+          <div className={styles.offer}>
+            <div className={styles.text5}>Explore</div>
           </div>
         </div>
-        <div className={styles.container1}>
-          <Image className={styles.waIcon1} width={70} height={70} alt="" src="/images/wa-icon.png" />
-          <div className={styles.div}>和旅館</div>
+        <div className={styles.component41} onClick={onComponent4ContainerClick}>
+          <div className={styles.text5}>Book Now</div>
         </div>
       </div>
 
@@ -169,7 +167,7 @@ const LandingPage: NextPage = () => {
           <div className={styles.heading31}>Quick Links</div>
           <div className={styles.address123SakuraContainer}>
             <span className={styles.address123SakuraContainer1}>
-              <p className={styles.address123456Sakura}>Address: 123456 Sakura Street, Kyoto, Japan</p>
+              <p className={styles.address123456Sakura}>Address: 123456 Sakura Street, Example, Japan</p>
               <p className={styles.address123456Sakura}>Phone: +000 123-456-7890</p>
               <p className={styles.address123456Sakura}>Email: wa-ryokan@example.com</p>
             </span>
@@ -190,13 +188,13 @@ const LandingPage: NextPage = () => {
           </div>
         </div>
         <div className={styles.heading32}>Contact</div>
-        <div className={styles.japaneseRyokanExperience}>© 2035 Japanese Ryokan Experience. All rights reserved.</div>
+        <div className={styles.japaneseRyokanExperience}>© 2335 Japanese Ryokan Example Experience. All rights reserved.</div>
       </div>
 
-       <Image className={styles.japaneseRyokanIcon} width={1727} height={935} alt="" src="/images/wa-icon.png" />
-       <Image className={styles.japaneseRyokanIcon1} width={557} height={178} alt="" src="/images/wa-icon.png" />
     </div>
   );
 };
 
 export default LandingPage;
+
+

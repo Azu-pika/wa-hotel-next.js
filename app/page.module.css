@@ -23,12 +23,13 @@
     align-items: center;
     justify-content: flex-start;
     gap: 4px;
+    margin-left: 20px;     /* Add space between sign-in and language */
 }
 
-.component1Icon {
-    width: 20px;
+.component1Icon {    /*サインインのアイコンサイズ*/
+    width: 23px;
     position: relative;
-    height: 20px;
+    height: 23px;
     overflow: hidden;
     flex-shrink: 0;
 }
@@ -43,7 +44,7 @@
     position: absolute;
     top: calc(50% - 9px);
     right: 216px;
-    width: 155px;
+    width: 160px;   /*幅変えた*/
     height: 22px;
     display: flex;
     flex-direction: row;
@@ -58,15 +59,23 @@
     position: relative;
     background-color: #d4dabc;
     height: 52px;
-    text-align: left;
     font-size: 20px;
     color: #4b5563;
     font-family: Lora;
+    display: flex;               /* Use flexbox */
+    justify-content: flex-end;   /* Push content to the right */
+    align-items: center;         /* Vertically center content */
+    padding: 0 20px;             /* Add some padding */
+    box-sizing: border-box;      /* Include padding in width */
 }
 
 /* Styles from original index.module.css */
 
 /* General Styles */
+.landingPage {
+    overflow: hidden; /* Prevent extra scrollbars */
+}
+
 .explore {
     width: 100%;
     position: relative;
@@ -78,35 +87,35 @@
     font-family: Lora;
 }
 
-/* NOTE: There was a duplicate .text class here. It has been renamed to .indexText to avoid collision */
 .indexText {
     position: relative;
     line-height: 28px;
 }
 
+
+
+
+
+
+
 /* Navigation Bar Styles */
 .nav {
     width: 100%;
-    position: relative;
     background-color: #fff;
     border-top: 3px solid #d4dabc;
     border-bottom: 3px solid #d4dabc;
-    box-sizing: border-box;
     height: 80px;
-    text-align: left;
-    font-size: 24px;
-    color: #4b5563;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    box-sizing: border-box;
     font-family: Lora;
 }
 
-.container {
-    position: absolute;
-    top: calc(50% - 35px);
-    left: 60px;
+.container1 { /* 和旅館の名前? */
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
     gap: 8px;
     font-size: 37px;
     font-family: 'Klee One';
@@ -114,100 +123,80 @@
 
 .waIcon1 {
     width: 70px;
-    position: relative;
     height: 70px;
     object-fit: cover;
 }
 
 .div {
-    width: 124px;
-    position: relative;
     line-height: 32px;
     display: flex;
     align-items: center;
-    height: 42px;
-    flex-shrink: 0;
 }
 
 .navigationBar {
-    position: absolute;
-    top: calc(50% - 18px);
-    left: 1018px;
-    width: 649px;
-    height: 36px;
+    display: flex;
+    gap: 30px;
     font-size: 18px;
 }
 
-.home {
-    position: absolute;
-    top: 4px;
-    left: 12px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+.home, .rooms1, .restaurant, .explore {
+    cursor: pointer;
+
 }
 
-.rooms {
-    position: absolute;
-    top: 4px;
-    left: 94px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-
-.restaurant {
-    position: absolute;
-    top: 4px;
-    left: 182px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-
-.recreation {
-    position: absolute;
-    top: 4px;
-    left: 304px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-
-.offer {
-    position: absolute;
-    top: 4px;
-    left: 426px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-
-.component4 {
-    position: absolute;
-    top: calc(50% - 25px);
-    left: calc(50% + 667.5px);
+.component41 {
     box-shadow: 4px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 4px 4px -2px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     background-color: #3d73b5;
-    width: 145px;
-    height: 49px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
     padding: 8px 16px;
-    box-sizing: border-box;
     cursor: pointer;
-    text-align: center;
     color: #fff;
+    font-size: 18px;
 }
+
+.text5 {
+    white-space: nowrap;
+}
+
+
+
+
+
+/* Wa-Ryokan Styles */
+.waRyokan {
+    width: 100%;
+    height: 100%; /*124px; */
+    text-align: center;         /* Center the text */
+    color: #fff;
+    font-family: Lora;
+    background-image: url('/images/winged-jedi--nY6A292lBQ-unsplash.jpg');
+    background-size: cover; /* Cover the entire area */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center content */
+    align-items: center;
+}
+
+.heading1 {
+    font-size: 96px;
+    line-height: 48px;
+    font-weight: 600;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.discoverTheBeauty {
+    line-height: 44px;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25), 0px 4px 6px rgba(0, 0, 0, 0.25);
+    font-size: 24px;               /* Adjust font size */
+}
+
+
+
+
+
+
+
 
 /* Welcome Section Styles */
 .welcomSection {
