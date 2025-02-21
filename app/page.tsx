@@ -31,7 +31,6 @@ const LandingPage: NextPage = () => {
           <Image className={styles.componentIcon} width={20} height={20} alt="" src="/images/language-icon.png" />
           <div className={styles.text5}>Languages</div>
         </div>
-
       </div>
 
 
@@ -65,25 +64,50 @@ const LandingPage: NextPage = () => {
         <div className={styles.backgroundImageContainer}> {/* [NEW] */}
           <div className={styles.heading1}>Wa-Ryokan</div>
           <div className={styles.discoverTheBeauty}>Discover the beauty of Japan</div>
-          
         </div>
       </div>
 
+
+
+
+
+
       {/* Welcome Section */}
       <div className={styles.welcomSection}>
+        <div className={styles.heading2}>Welcome to Our Hotel</div>
+        <Image className={styles.austinCurtisPjh6jktzggkUnspIcon} 
+              width={1000}
+              height={700}
+              alt="" 
+              src="/images/austin-curtis-pJh6jktzGgk-unsplash.jpg" 
+              layout="responsive" />
+        <Image className={styles.shoujiPicIcon} 
+              width={800}
+              height={1067}
+              alt="" 
+              src="/images/korie-cull-6uxGM_9LJFc-unsplash.jpg" 
+              layout="responsive" />
+        <Image className={styles.ajisaiPicIcon} 
+              width={800}
+              height={1536}
+              alt="" 
+              src="/images/yunan-wang-_9Y0IZEwTR0-unsplash.jpg" 
+              layout="responsive" />
+
         <div className={styles.immerseYourselfInContainer}>
-          <span className={styles.address123SakuraContainer1}>
-            <p className={styles.address123456Sakura}>
+          <span>
+            <p>
               <span className={styles.immerseYourselfIn1}>Immerse yourself in the serene atmosphere of our traditional Japanese inn.</span>
             </p>
-            <p className={styles.address123456Sakura}>Experience the perfect blend of ancient customs and modern comfort, surrounded by the beauty of nature and the warmth of Japanese hospitality.</p>
+            <p>Experience the perfect blend of ancient customs and modern comfort, surrounded by the beauty of nature and the warmth of Japanese hospitality.</p>
           </span>
         </div>
-        <Image className={styles.austinCurtisPjh6jktzggkUnspIcon} width={747} height={522} alt="" src="/images/austin-curtis-pJh6jKtzGgk-unsplash.jpg" />
-        <Image className={styles.shoujiPicIcon} width={341} height={454} alt="" src="/images/korie-cull-6uxGM_9LJFc-unsplash.jpg" />
-        <Image className={styles.ajisaiPicIcon} width={333} height={637} alt="" src="/images/yunan-wang-_9Y0IZEwTR0-unsplash.jpg" />
-        <div className={styles.heading23}>Welcome to Our Ryokan</div>
       </div>
+
+
+
+
+
 
       {/* Rooms */}
       <div className={styles.rooms}>

@@ -27,6 +27,7 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
   margin: 0; /* Remove duplicate margin declaration here */
+  padding: 0;
   line-height: normal; /* Remove duplicate line-height declaration here */
 }
 

@@ -172,7 +172,7 @@
     position: relative; /* [NEW] For positioning backgroundImageContainer */
 }
 
-.backgroundImageContainer { /* [NEW] */
+.backgroundImageContainer { 
     position: absolute;
     top: 0;
     left: 0;
@@ -189,21 +189,21 @@
     padding: 20px; /* Add some padding for spacing */
 }
 
-.heading1 {
-    font-size: 80px;
+.heading1 {   /* Wa-ryokan title*/
+    font-size: 100px;
     line-height: 48px;
     font-weight: 600;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.25);
-    margin-bottom: 35px; /* [NEW] Add space below "Wa-Ryokan" */
+    margin-bottom: 45px; /* Add space below "Wa-Ryokan" */
     margin-left: 5px; 
 }
 
-.discoverTheBeauty {
-    line-height: 44px;
+.discoverTheBeauty {    /* Hero-discover */
+    line-height: 48px;
     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25), 0px 4px 6px rgba(0, 0, 0, 0.25);
     font-size: 24px;
-    margin-top: -10px; /* [NEW] Move "Discover the beauty of Japan" up a bit */
-    margin-left: 30px; 
+    margin-top: -10px; /* Move "Discover the beauty of Japan" up a bit */
+    margin-left: 35px; 
 }
 
 
@@ -214,72 +214,119 @@
 .welcomSection {
     width: 100%;
     position: relative;
-    height: 886px;
+    min-height: 886px;
     text-align: left;
     font-size: 18px;
     color: #374151;
     font-family: Lora;
+    overflow: hidden;
 }
 
 .heading2 {
     position: absolute;
     top: 86px;
-    left: calc(50% - 788.5px);
+    left: 5%;
     font-size: 64px;
     line-height: 48px;
     font-weight: 600;
     color: #4b5563;
-    text-align: center;
 }
 
+.austinCurtisPjh6jktzggkUnspIcon,
+.shoujiPicIcon,
 .ajisaiPicIcon {
-    position: absolute;
-    top: 184px;
-    left: 63px;
-    width: 333px;
-    height: 637px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
     object-fit: cover;
+}
+
+
+.austinCurtisPjh6jktzggkUnspIcon {
+    position: absolute;
+    top: 110px;
+    right: 5%;
+    width: 45%;
+    height: auto;
+    max-width: 747px;
 }
 
 .shoujiPicIcon {
     position: absolute;
     top: 367px;
-    left: 465px;
-    width: 341px;
-    height: 454px;
-    object-fit: cover;
+    left: 25%;
+    width: 20%;
+    height: auto;
+    max-width: 341px;
 }
 
-.austinCurtisPjh6jktzggkUnspIcon {
+.ajisaiPicIcon {
     position: absolute;
-    top: 110px;
-    left: 910px;
-    width: 747px;
-    height: 522px;
-    object-fit: cover;
+    top: 184px;
+    left: 5%;
+    width: 20%;
+    height: auto;
+    max-width: 333px;
 }
 
 .immerseYourselfInContainer {
     position: absolute;
-    top: 681px;
-    left: 941px;
+    bottom: 10%;
+    right: 5%;
+    width: 40%;
+    max-width: 654px;
     line-height: 29.25px;
-    display: flex;
-    align-items: center;
-    width: 654px;
 }
 
-.immerseYourselfInContainer1 {
-    width: 100%;
+@media (max-width: 1200px) {
+    .shoujiPicIcon {
+        left: 5%;
+    }
+    .immerseYourselfInContainer {
+        width: 50%;
+    }
 }
 
-.immerseYourselfInTheSerene {
-    margin: 0;
+@media (max-width: 768px) {
+    .welcomSection {
+        min-height: 1200px;
+    }
+    .heading2 {
+        font-size: 48px;
+        top: 40px;
+    }
+    .austinCurtisPjh6jktzggkUnspIcon {
+        width: 90%;
+        right: 5%;
+        left: 5%;
+        top: 150px;
+    }
+    .shoujiPicIcon, .ajisaiPicIcon {
+        width: 45%;
+        top: 500px;
+    }
+    .ajisaiPicIcon {
+        left: 5%;
+    }
+    .shoujiPicIcon {
+        right: 5%;
+        left: auto;
+    }
+    .immerseYourselfInContainer {
+        width: 90%;
+        right: 5%;
+        left: 5%;
+        bottom: 5%;
+    }
 }
 
-.immerseYourselfIn {
-    font-size: 24px;
-}
+
+
+
+
+
+
+
 
 /* Room Styles */
 .rooms {
