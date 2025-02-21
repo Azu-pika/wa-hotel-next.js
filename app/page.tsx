@@ -23,14 +23,15 @@ const LandingPage: NextPage = () => {
     <div className={styles.landingPage}>
       {/* Top Bar */}
       <div className={styles.topBar}>
+       <div className={styles.signin} onClick={onComponent4ContainerClick}>
+          <Image className={styles.component1Icon} width={20} height={20} alt="" src="/images/login-icon.png" />
+          <div className={styles.text12}>Sign in or Join</div>
+        </div>
         <div className={styles.language}>
           <Image className={styles.componentIcon} width={20} height={20} alt="" src="/images/language-icon.png" />
           <div className={styles.text5}>Languages</div>
         </div>
-        <div className={styles.signin} onClick={onComponent4ContainerClick}>
-          <Image className={styles.component1Icon} width={20} height={20} alt="" src="/images/login-icon.png" />
-          <div className={styles.text12}>Sign in or Join</div>
-        </div>
+
       </div>
 
 
@@ -61,8 +62,11 @@ const LandingPage: NextPage = () => {
 
       {/* Wa-Ryokan */}
       <div className={styles.waRyokan}>
-        <div className={styles.discoverTheBeauty}>Discover the beauty of Japan</div>
-        <div className={styles.heading1}>Wa-Ryokan</div>
+        <div className={styles.backgroundImageContainer}> {/* [NEW] */}
+          <div className={styles.heading1}>Wa-Ryokan</div>
+          <div className={styles.discoverTheBeauty}>Discover the beauty of Japan</div>
+          
+        </div>
       </div>
 
       {/* Welcome Section */}
