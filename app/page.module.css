@@ -8,7 +8,7 @@
 
 
  /*top bar*/
-.topBar {     /**/
+.topBar {     
     width: 100%;
     position: relative;
     background-color: #d4dabc;
@@ -146,7 +146,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    cursor: pointer; /* NEW: Show pointer cursor on hover */
+    cursor: pointer; /*  Show pointer cursor on hover */
 }
 
 .booknowbutton {     /*Book Now 青のボタン*/
@@ -183,7 +183,7 @@
     text-align: center;
     color: #fff;
     font-family: Lora;
-    position: relative; /* [NEW] For positioning backgroundImageContainer */
+    position: relative; /* For positioning backgroundImageContainer */
 }
 
 .backgroundImageContainer { /* Hero-pic */
@@ -232,13 +232,17 @@
 }
 
 .welcometoourhotel {
-    position: absolute;
-    top: 86px;
-    left: 5%;
+    width: 732px;
+    position: relative;
     font-size: 64px;
     line-height: 48px;
     font-weight: 600;
+    font-family: Lora;
     color: #4b5563;
+    text-align: center;
+    display: inline-block;
+    margin-top: 30px;
+    
 }
 
 .welcomepic1,
@@ -274,7 +278,9 @@
     width: 45%;
     height: auto;
     max-width: 747px;
+    
 }
+
 
 .containerherotext {
     position: absolute;
@@ -292,7 +298,7 @@
 
 @media (max-width: 1200px) {
     .welcomepic2 {
-        left: 5%;
+        left: 15%;
     }
     .herotextimmerse {
         width: 50%;
@@ -300,7 +306,7 @@
 }
 @media (max-width: 768px) {
     .navigationBar {
-      display: none; /* NEW: Hide the navigation bar */
+      display: none; /* Hide the navigation bar */
     }
     .welcomSection {
         min-height: 1200px;
@@ -312,6 +318,7 @@
     .welcomepic1, .welcomepic2 {
         width: 45%;
         top: 500px;
+        display: none; /* Hide */
     }
     .welcomepic1 {
         left: 5%;
@@ -338,14 +345,18 @@
 /* [Rooms] */
 .roomsbigcontainer {
     width: 100%;
-    position: relative; /* [NEW]: Change from absolute to relative */
-    padding: 20px; /* [NEW]: Add padding for spacing */
-    box-sizing: border-box; /* [NEW]: Include padding in the total width */
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
     display: flex; /* [NEW]: Use flexbox for layout */
-    flex-direction: column; /* [NEW]: Stack items vertically */
-    align-items: center; /* [NEW]: Center items horizontally */
-}
+    flex-direction: row; /* [NEW]: Arrange items in a row */
+    align-items: stretch; /* [NEW]: Align items vertically */
+    justify-content: space-around; /* [NEW]: Distribute items evenly */
+    flex-wrap: wrap; /* [NEW] Allow items to wrap to the next line if needed */
+    background-color: #d4dabc;
+    height: 1118px;
 
+}
 
 .headingroom {
     width: 205px;
@@ -357,6 +368,8 @@
     color: #4b5563;
     text-align: center;
     display: inline-block;
+    margin-top: 30px;
+
 }
 .roomsavailability {
 }
@@ -367,38 +380,40 @@
     position: absolute;
     top: 90px;
     left: 879px;
-    width: 80%; /* [NEW]: Make the image responsive */
-    height: auto; /* [NEW]: Maintain aspect ratio */
+    width: 50%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
     object-fit: cover;
-    margin-bottom: 20px; /* [NEW]: Add some space below the image */
-    position: static; /* [NEW]: remove absolute position */
+    margin-bottom: 20px; /* Add some space below the image */
+    margin-top: 60px;
+    position: static; /* remove absolute position */
 
 }
 
 .roomtextcontainer {
-    position: static; /* [NEW]: remove absolute position */
-    top: 246px;
-    left: 203px;
+    width: 556px;
+    position: relative;
     line-height: 29.25px;
+    font-family: Lora;
     color: #374151;
+    text-align: left;
     display: flex;
-    align-items: center;
-    width: 80%; /* [NEW]: Set a width for the text container */
+    align-items: flex-start; /* [NEW] Change from center to flex-start */
+    justify-content: flex-start; /* [NEW] Add this line */
     height: 166px;
-    font-size: 24px;
-    text-align: center; /* [NEW]: Center the text */
-    margin-bottom: 20px; /* [NEW]: Add spacing below the text */
-
-
+    font-size: 18px;
+    padding-left: 20px; /* [NEW] Add some padding on the left */
+    box-sizing: border-box; /* [NEW] Include padding in the width */
 }
 
+
 .roomexampletext {
-    width: 100%;
+    margin: 0;
+
 }
 
 
 .checkroomavailabilitybutton {
-    position: static; /* [NEW]: remove absolute position */
+    position: static; /*  remove absolute position */
     width: fit-content; /*幅がおさまる*/
     top: 1900px;  /*高さ、ポジション決まる*/
     right: 100px;
@@ -415,7 +430,7 @@
     text-align: center;
     font-size: 24px;
     color: #fff;
-    margin-bottom: 20px; /* [NEW]: Add space below the button */
+    margin-bottom: 20px; /*  Add space below the button */
 
 }
 
@@ -425,11 +440,11 @@
 .mountainViewRoom,
 .familySuiteRoom,
 .deluxeSuiteRoom {
-    width: 80%; /* [NEW]: Set a width for the room containers */
-    margin-bottom: 20px; /* [NEW]: Add spacing between room containers */
-    position: relative; /* [NEW]: Change from absolute to relative */
+    width: 22%; /* [NEW]: Set a fixed width for the room containers (adjust as needed) */
+    margin-bottom: 20px;
+    position: relative;
+    box-sizing: border-box; /* [NEW]:  Include padding and border in the element's total width and height */
 }
-
 
 
  /* room tatami */
