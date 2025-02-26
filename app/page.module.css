@@ -1,60 +1,14 @@
 /* page.module.css */
 
-/* Styles from original page.module.css */
-.componentIcon {
-    width: 20px;
-    position: relative;
-    height: 20px;
+
+/* General Styles */
+.landingPage {    /**/
+    overflow: hidden; /* Prevent extra scrollbars */
 }
 
-.topBarText {
-    /* Renamed from .text to avoid conflict */
-    position: relative;
-    line-height: 28px;
-}
 
-.language {
-    position: absolute;
-    top: calc(50% - 12px);
-    right: 60px;
-    width: 120px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 4px;
-    margin-left: 20px;     /* Add space between sign-in and language */
-}
-
-.component1Icon {    /*サインインのアイコンサイズ*/
-    width: 23px;
-    position: relative;
-    height: 23px;
-    overflow: hidden;
-    flex-shrink: 0;
-}
-
-.signinText {
-    /* Renamed from .text1 to avoid conflict */
-    position: relative;
-    line-height: 20px;
-}
-
-.signin {
-    position: absolute;
-    top: calc(50% - 9px);
-    right: 216px;
-    width: 160px;   /*幅変えた*/
-    height: 22px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 4px;
-    cursor: pointer;
-}
-
-.topBar {
+ /*top bar*/
+.topBar {     /**/
     width: 100%;
     position: relative;
     background-color: #d4dabc;
@@ -69,28 +23,51 @@
     box-sizing: border-box;      /* Include padding in width */
 }
 
-/* Styles from original index.module.css */
-
-/* General Styles */
-.landingPage {
-    overflow: hidden; /* Prevent extra scrollbars */
+.signin {     /*signin*/
+    position: absolute;
+    top: calc(50% - 9px);
+    right: 216px;
+    width: 160px;   /*幅変えた*/
+    height: 22px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+    cursor: pointer;
 }
 
-.explore {
-    width: 100%;
+.signinicon {    /*サインインのアイコンサイズ*/
+    width: 23px;
     position: relative;
-    background-color: #d4dabc;
-    height: 827px;
-    text-align: left;
-    font-size: 16px;
-    color: #4b5563;
-    font-family: Lora;
+    height: 23px;
+    overflow: hidden;
+    flex-shrink: 0;
 }
 
-.indexText {
-    position: relative;
-    line-height: 28px;
+.language {   /*language-button*/
+    position: absolute;
+    top: calc(50% - 12px);
+    right: 60px;
+    width: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+    margin-left: 20px;     /* Add space between sign-in and language */
 }
+
+.componenticon {   /*language-grobal-picture*/
+    width: 20px;
+    position: relative;
+    height: 20px;
+}
+
+.text5 {    /*language-signin-nav-button-text*/
+    white-space: nowrap;
+}
+
 
 
 
@@ -99,64 +76,101 @@
 
 
 /* Navigation Bar Styles */
-.nav {
+.nav {    /**/
     width: 100%;
+    position: relative;
     background-color: #fff;
     border-top: 3px solid #d4dabc;
     border-bottom: 3px solid #d4dabc;
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 60px;
     box-sizing: border-box;
+    height: 80px;
+    text-align: left;
+    font-size: 24px;
+    color: #4b5563;
     font-family: Lora;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Vertically align items */
+    justify-content: space-between; /* Space out items */
+    padding: 0 20px; /* Add some padding */
 }
 
-.container1 { /* 和旅館の名前? */
+.wanamae { /* 和旅館の名前? */
+    /*position: absolute; REMOVED: No absolute positioning */
+    /*top: calc(50% - 35px); REMOVED: Centering is handled by flexbox */
+    left: 60px;
     display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: flex-start;
     gap: 8px;
     font-size: 37px;
     font-family: 'Klee One';
 }
 
-.waIcon1 {
+.waicon {    /*wa-icon-pic*/
     width: 70px;
     height: 70px;
     object-fit: cover;
 }
 
-.div {
+.waryokannamae {     /*和旅館の名前*/
+    width: auto; /* Allow the width to adjust based on content */
+    position: relative;
     line-height: 32px;
     display: flex;
     align-items: center;
+    height: 42px;
+    flex-shrink: 0;
 }
 
-.navigationBar {
+.navigationBar {     /*ナビの中の箱*/
+    /*position: absolute; REMOVED: No absolute positioning */
+    /*top: calc(50% - 18px); REMOVED: Centering is handled by flexbox */
+    /*left: 1018px; REMOVED: Positioning handled by flexbox */
+    width: auto; /* CHANGED: Adjust width based on content */
+    height: 36px;
+    font-size: 18px;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Vertically align items */
+    gap: 20px; /* Space between the links */
+}
+
+.home,
+.rooms1, 
+.restaurant,
+.explore {  /*ナビの中のもの*/
+    /*position: absolute; REMOVED: No absolute positioning */
+    /*top: 4px; REMOVED: Positioning handled by flexbox */
+    /*left: 12px; REMOVED: Positioning handled by flexbox */
     display: flex;
-    gap: 30px;
-    font-size: 18px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    cursor: pointer; /* NEW: Show pointer cursor on hover */
 }
 
-.home, .rooms1, .restaurant, .offer {
-    cursor: pointer;
-
+.booknowbutton {     /*Book Now 青のボタン*/
+    /*position: absolute; REMOVED: No absolute positioning */
+     /*top: calc(50% - 25px); REMOVED: Centering is handled by flexbox */
+     /*left: calc(50% + 667.5px); REMOVED: Positioning handled by flexbox */
+     box-shadow: 4px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 4px 4px -2px rgba(0, 0, 0, 0.1);
+     border-radius: 8px;
+     background-color: #3d73b5;
+     width: 145px;
+     height: 49px;
+     overflow: hidden;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     padding: 8px 16px;
+     box-sizing: border-box;
+     cursor: pointer;
+     text-align: center;
+     color: #fff;
 }
+ 
 
-.component41 {
-    box-shadow: 4px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 4px 4px -2px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    background-color: #3d73b5;
-    padding: 8px 16px;
-    cursor: pointer;
-    color: #fff;
-    font-size: 18px;
-}
-
-.text5 {
-    white-space: nowrap;
-}
 
 
 
@@ -172,7 +186,7 @@
     position: relative; /* [NEW] For positioning backgroundImageContainer */
 }
 
-.backgroundImageContainer { 
+.backgroundImageContainer { /* Hero-pic */
     position: absolute;
     top: 0;
     left: 0;
@@ -189,7 +203,7 @@
     padding: 20px; /* Add some padding for spacing */
 }
 
-.heading1 {   /* Wa-ryokan title*/
+.heromaintitle {   /* Wa-ryokan title*/
     font-size: 100px;
     line-height: 48px;
     font-weight: 600;
@@ -198,7 +212,7 @@
     margin-left: 5px; 
 }
 
-.discoverTheBeauty {    /* Hero-discover */
+.herosubtitle {    /* Hero-sub-title-discover.... */
     line-height: 48px;
     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25), 0px 4px 6px rgba(0, 0, 0, 0.25);
     font-size: 24px;
@@ -206,11 +220,6 @@
     margin-left: 35px; 
 }
 
-
-
-
-
-/* Welcome Section Styles */
 .welcomSection {
     width: 100%;
     position: relative;
@@ -222,7 +231,7 @@
     overflow: hidden;
 }
 
-.heading2 {
+.welcometoourhotel {
     position: absolute;
     top: 86px;
     left: 5%;
@@ -232,26 +241,24 @@
     color: #4b5563;
 }
 
-.austinCurtisPjh6jktzggkUnspIcon,
-.shoujiPicIcon,
-.ajisaiPicIcon {
+.welcomepic1,
+.welcomepic2,
+.welcomepic3 {
     width: 100%;
     max-width: 100%;
     height: auto;
     object-fit: cover;
 }
 
-
-.austinCurtisPjh6jktzggkUnspIcon {
+.welcomepic1 {
     position: absolute;
-    top: 110px;
-    right: 5%;
-    width: 45%;
+    top: 184px;
+    left: 5%;
+    width: 20%;
     height: auto;
-    max-width: 747px;
+    max-width: 333px;
 }
-
-.shoujiPicIcon {
+.welcomepic2 {
     position: absolute;
     top: 367px;
     left: 25%;
@@ -260,16 +267,16 @@
     max-width: 341px;
 }
 
-.ajisaiPicIcon {
+.welcomepic3 {
     position: absolute;
-    top: 184px;
-    left: 5%;
-    width: 20%;
+    top: 110px;
+    right: 5%;
+    width: 45%;
     height: auto;
-    max-width: 333px;
+    max-width: 747px;
 }
 
-.immerseYourselfInContainer {
+.containerherotext {
     position: absolute;
     bottom: 10%;
     right: 5%;
@@ -278,16 +285,23 @@
     line-height: 29.25px;
 }
 
+.herotextimmerse {
+}
+
+
+
 @media (max-width: 1200px) {
-    .shoujiPicIcon {
+    .welcomepic2 {
         left: 5%;
     }
-    .immerseYourselfInContainer {
+    .herotextimmerse {
         width: 50%;
     }
 }
-
 @media (max-width: 768px) {
+    .navigationBar {
+      display: none; /* NEW: Hide the navigation bar */
+    }
     .welcomSection {
         min-height: 1200px;
     }
@@ -295,24 +309,21 @@
         font-size: 48px;
         top: 40px;
     }
-    .austinCurtisPjh6jktzggkUnspIcon {
+    .welcomepic1, .welcomepic2 {
+        width: 45%;
+        top: 500px;
+    }
+    .welcomepic1 {
+        left: 5%;
+    }
+    .welcomepic2 {
+        left: auto;
         width: 90%;
         right: 5%;
         left: 5%;
         top: 150px;
     }
-    .shoujiPicIcon, .ajisaiPicIcon {
-        width: 45%;
-        top: 500px;
-    }
-    .ajisaiPicIcon {
-        left: 5%;
-    }
-    .shoujiPicIcon {
-        right: 5%;
-        left: auto;
-    }
-    .immerseYourselfInContainer {
+    .herotextimmerse {
         width: 90%;
         right: 5%;
         left: 5%;
@@ -324,206 +335,73 @@
 
 
 
-
-
-
-
-/* Room Styles */
-.rooms {
+/* [Rooms] */
+.roomsbigcontainer {
     width: 100%;
+    position: relative; /* [NEW]: Change from absolute to relative */
+    padding: 20px; /* [NEW]: Add padding for spacing */
+    box-sizing: border-box; /* [NEW]: Include padding in the total width */
+    display: flex; /* [NEW]: Use flexbox for layout */
+    flex-direction: column; /* [NEW]: Stack items vertically */
+    align-items: center; /* [NEW]: Center items horizontally */
+}
+
+
+.headingroom {
+    width: 205px;
     position: relative;
-    background-color: #d4dabc;
-    height: 1118px;
-    text-align: left;
-    font-size: 16px;
-    color: #4b5563;
-    font-family: Lora;
-}
-
-.roomPicIcon {
-    position: absolute;
-    top: 90px;
-    left: 879px;
-    width: 684px;
-    height: 405px;
-    object-fit: cover;
-}
-
-.heading2 {
-    position: absolute;
-    top: 99px;
-    left: calc(50% - 692px);
     font-size: 64px;
     line-height: 48px;
     font-weight: 600;
+    font-family: Lora;
+    color: #4b5563;
     text-align: center;
+    display: inline-block;
+}
+.roomsavailability {
 }
 
-.weTakePrideContainer {
+
+/* Example room pic(tatami) */
+.exampleroompic {    /* Example room pic(tatami) */
     position: absolute;
+    top: 90px;
+    left: 879px;
+    width: 80%; /* [NEW]: Make the image responsive */
+    height: auto; /* [NEW]: Maintain aspect ratio */
+    object-fit: cover;
+    margin-bottom: 20px; /* [NEW]: Add some space below the image */
+    position: static; /* [NEW]: remove absolute position */
+
+}
+
+.roomtextcontainer {
+    position: static; /* [NEW]: remove absolute position */
     top: 246px;
     left: 203px;
     line-height: 29.25px;
     color: #374151;
     display: flex;
     align-items: center;
-    width: 556px;
+    width: 80%; /* [NEW]: Set a width for the text container */
     height: 166px;
     font-size: 24px;
+    text-align: center; /* [NEW]: Center the text */
+    margin-bottom: 20px; /* [NEW]: Add spacing below the text */
+
+
 }
 
-.weTakePrideContainer1 {
+.roomexampletext {
     width: 100%;
 }
 
-.whetherYouSeek {
-    margin: 0;
-    font-size: 18px;
-}
 
-.weTakePride {
-    margin: 0;
-}
-
-.traditionalTatamiRoom {
-    position: absolute;
-    top: 551px;
-    left: 25px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-    background-color: #fff;
-    width: 400px;
-    height: 429px;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-.tatamiIcon {
-    position: absolute;
-    top: -1px;
-    left: 0px;
-    width: 400px;
-    height: 312px;
-    object-fit: cover;
-}
-
-.immerseYourselfIn {
-    position: absolute;
-    top: 358px;
-    left: 29px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    width: 352px;
-}
-
-.mountainViewRoom {
-    position: absolute;
-    top: 551px;
-    left: 452px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-    background-color: #fff;
-    width: 400px;
-    height: 429px;
-    overflow: hidden;
-}
-
-.mountainViewRoom1 {
-    position: absolute;
-    top: 0px;
-    left: -79px;
-    width: 558.1px;
-    height: 311px;
-    object-fit: cover;
-}
-
-.enjoyStunningVistas {
-    position: absolute;
-    top: 358px;
-    left: 29px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    width: 319px;
-}
-
-.familySuite {
-    position: absolute;
-    top: 551px;
-    left: 879px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-    background-color: #fff;
-    width: 400px;
-    height: 429px;
-    overflow: hidden;
-}
-
-.familySuiteIcon {
-    position: absolute;
-    top: 0px;
-    left: -13px;
-    width: 413px;
-    height: 311px;
-    object-fit: cover;
-}
-
-.spaciousAndCozy {
-    position: absolute;
-    top: 358px;
-    left: 29px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    width: 327px;
-}
-
-.deluxeSuite {
-    position: absolute;
-    top: 551px;
-    left: 1306px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-    background-color: #fff;
-    width: 400px;
-    height: 429px;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-.deluxeSuiteIcon {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 400px;
-    height: 311px;
-    object-fit: cover;
-}
-
-.indulgeInLuxury {
-    position: absolute;
-    top: 358px;
-    left: 29px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    width: 347px;
-}
-
-.heading3 {
-    position: absolute;
-    top: 322px;
-    left: 29px;
-    font-size: 24px;
-    line-height: 28px;
-    font-weight: 600;
-}
-
-.component4 {
-    position: absolute;
-    top: 1021px;
-    right: 103px;
+.checkroomavailabilitybutton {
+    position: static; /* [NEW]: remove absolute position */
+    width: fit-content; /*幅がおさまる*/
+    top: 1900px;  /*高さ、ポジション決まる*/
+    right: 100px;
     box-shadow: 7px 0px 6px rgba(0, 0, 0, 0.1), 0px 5px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     background-color: #246c43;
@@ -537,21 +415,155 @@
     text-align: center;
     font-size: 24px;
     color: #fff;
+    margin-bottom: 20px; /* [NEW]: Add space below the button */
+
 }
 
-.wideText {
-    /* Renamed from .text to avoid conflict */
-    width: 328px;
-    position: relative;
-    line-height: 28px;
+
+ /* room cards */
+.traditionalTatamiRoom,
+.mountainViewRoom,
+.familySuiteRoom,
+.deluxeSuiteRoom {
+    width: 80%; /* [NEW]: Set a width for the room containers */
+    margin-bottom: 20px; /* [NEW]: Add spacing between room containers */
+    position: relative; /* [NEW]: Change from absolute to relative */
+}
+
+
+
+ /* room tatami */
+.traditionalTatamiRoom {   /* room tatami card */
+    top: 551px;
+    left: 25px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    background-color: #fff;
+    height: 429px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.tatamiroomtext {   /* room tatami text */
+    position: absolute;
+    top: 358px;
+    left: 29px;
+    line-height: 24px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
+    width: 352px;
+}
+.roomheading {     /* room card-title */
+
 }
 
-/* Restaurant Styles */
-.restrant {
+.tatamipic {   /* room tatami picture */
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    width: 400px;
+    height: 312px;
+    object-fit: cover;
+}
+
+ /* room Mountain */
+.mountainViewRoom {
+    top: 551px;
+    left: 452px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    background-color: #fff;
+    height: 429px;
+    overflow: hidden;
+}
+
+.mountainroomtext {
+    position: absolute;
+    top: 358px;
+    left: 29px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    width: 319px;
+}
+
+.mountainpic {    /* room mountain picture */
+    position: absolute;
+    top: 0px;
+    left: -79px;
+    width: 558.1px;
+    height: 311px;
+    object-fit: cover;
+}
+
+ /* room family */
+.familySuiteRoom {
+    top: 551px;
+    left: 879px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    background-color: #fff;
+    height: 429px;
+    overflow: hidden;
+}
+
+.familytext {
+    position: absolute;
+    top: 358px;
+    left: 29px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    width: 327px;
+}
+
+.familypic {    /* room family picture */
+    position: absolute;
+    top: 0px;
+    left: -13px;
+    width: 413px;
+    height: 311px;
+    object-fit: cover;
+}
+
+ /* room deluxet */
+.deluxeSuiteRoom {
+    top: 551px;
+    left: 1306px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    background-color: #fff;
+    height: 429px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.deluxetext {
+    position: absolute;
+    top: 358px;
+    left: 29px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    width: 347px;
+}
+
+.deluxepic {    /* room deluxe picture */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 400px;
+    height: 311px;
+    object-fit: cover;
+}
+
+
+
+
+
+
+/* [Restaurant] */
+.restrantbigcontainer {
     width: 100%;
     position: relative;
     height: 740px;
@@ -561,7 +573,8 @@
     font-family: Lora;
 }
 
-.heading2 {
+
+.headingrestaurant {
     position: absolute;
     top: 75px;
     left: calc(50% - 680.5px);
@@ -572,7 +585,47 @@
     text-align: center;
 }
 
-.discoverTheTrueContainer {
+
+.restrantexamplepic {
+    position: absolute;
+    top: 174px;
+    left: 64px;
+    width: 623px;
+    height: 498px;
+    object-fit: cover;
+}
+
+.restaurantpic1 {
+    position: absolute;
+    top: 143px;
+    left: 1443px;
+    width: 248px;
+    height: 322px;
+    object-fit: cover;
+}
+.restaurantpic2 {
+    position: absolute;
+    top: 143px;
+    left: 1128px;
+    width: 248px;
+    height: 322px;
+    object-fit: cover;
+}
+
+.restaurantpic3 {
+    position: absolute;
+    top: 143px;
+    left: 766px;
+    width: 295px;
+    height: 322px;
+    object-fit: cover;
+}
+
+.restauranttextcontainer {
+    width: 100%;
+}
+
+.restranttext {
     position: absolute;
     top: 495px;
     left: 829px;
@@ -583,57 +636,29 @@
     height: 186px;
 }
 
-.discoverTheTrueContainer1 {
+
+
+
+
+
+
+
+/* [Explore] */
+.explorebigcontainer {    /**/
     width: 100%;
+    position: relative;
+    background-color: #d4dabc;
+    height: 827px;
+    text-align: left;
+    font-size: 16px;
+    color: #4b5563;
+    font-family: Lora;
 }
+.exploreheading {}
 
-.ourChefsAt {
-    margin: 0;
-}
+.exploretextcontainer {}
 
-.discoverTheTrue {
-    margin: 0;
-    font-size: 24px;
-}
-
-.cuisineIcon {
-    position: absolute;
-    top: 174px;
-    left: 64px;
-    width: 623px;
-    height: 498px;
-    object-fit: cover;
-}
-
-.richardIwaki2cpx1n7us5qUnspIcon {
-    position: absolute;
-    top: 143px;
-    left: 766px;
-    width: 295px;
-    height: 322px;
-    object-fit: cover;
-}
-
-.haleyTruongUcvxv6bn2z8UnsplIcon {
-    position: absolute;
-    top: 143px;
-    left: 1128px;
-    width: 248px;
-    height: 322px;
-    object-fit: cover;
-}
-
-.codyChanKaoi0tktabaUnsplashIcon {
-    position: absolute;
-    top: 143px;
-    left: 1443px;
-    width: 248px;
-    height: 322px;
-    object-fit: cover;
-}
-
-/* Explore Styles */
-.relaxInOurNaturalOnsenHotParent {
+.explorecardtext {
     position: absolute;
     top: 176px;
     left: 20px;
@@ -645,7 +670,17 @@
     overflow: hidden;
 }
 
-.benLimUhcwyq05GkUnsplash1Icon {
+.Onsencardcontainer {}
+
+.explorecardheading {}
+
+.explorecardtext {}
+
+.explorecardimagecontainer {}
+
+
+
+.exploreonsenpic {
     position: absolute;
     top: -25px;
     left: -27px;
@@ -654,30 +689,11 @@
     object-fit: cover;
 }
 
-.relaxInOur {
-    position: absolute;
-    top: 460px;
-    left: 29px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    width: 459px;
-    height: 71px;
-}
 
-.strollThroughSereneBambooSParent {
-    position: absolute;
-    top: 176px;
-    left: 591px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-    background-color: #fff;
-    width: 548px;
-    height: 587px;
-    overflow: hidden;
-}
 
-.takePicIcon {
+.Bamboocardcontainer {}
+
+.explorebamboopic {
     position: absolute;
     top: -10px;
     left: -36px;
@@ -685,44 +701,11 @@
     height: 412px;
     object-fit: cover;
 }
+.zencardcontainer {}
 
-.heading31 {
-    position: absolute;
-    top: 418px;
-    left: 29px;
-    font-size: 24px;
-    line-height: 28px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    width: 458px;
-    height: 28px;
-}
 
-.strollThroughSerene {
-    position: absolute;
-    top: 460px;
-    left: 29px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    width: 401px;
-    height: 71px;
-}
 
-.findPeaceAndBalanceInOurParent {
-    position: absolute;
-    top: 176px;
-    left: 1162px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-    background-color: #fff;
-    width: 548px;
-    height: 587px;
-    overflow: hidden;
-}
-
-.zenIcon {
+.explorezenpic {
     position: absolute;
     top: -356px;
     left: -21px;
@@ -731,34 +714,24 @@
     object-fit: cover;
 }
 
-.onsen {
-    position: absolute;
-    top: -9px;
-    left: -17px;
-    width: 616px;
-    height: 411px;
-}
 
-.heading3 {
-    position: absolute;
-    top: 418px;
-    left: 29px;
-    font-size: 24px;
-    line-height: 28px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    width: 255px;
-    height: 28px;
-}
 
-.findPeaceAnd {
-    position: absolute;
-    top: 460px;
-    left: 29px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    width: 440px;
-    height: 95px;
-}
+
+.footerbigcontainer {}
+.aboutuscontainer {}
+.aboutusheading {}
+.aboutustext {}
+.quicklinksheading{}
+.footerquicklinklist {}
+.componentroom {}
+.footercomponentext {}
+.componentamenities {}
+.componentamenities {}
+.componentlocation {}
+.componentcontact {}
+.contactcontainer {}
+.footercontactheading {}
+.addressContainer {}
+.contacttext {}
+.footerrightstext {}
+
