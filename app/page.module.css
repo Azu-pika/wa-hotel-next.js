@@ -350,9 +350,9 @@
     box-sizing: border-box;
     display: flex; /*  Use flexbox for layout */
     flex-direction: column; /* Changed row; column; */
-    align-items: stretch; /* stretch, flex-start, flex-end;(to the right) */  
-    justify-content: space-between; /* space-around; Distribute items evenly */
+    align-items: flex-end; /* Align items to the end (right side) */    justify-content: space-between; /* space-around; Distribute items evenly */
     /*flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+    justify-content: space-between;
     background-color: #d4dabc;
 
 }
@@ -512,6 +512,7 @@
     margin-bottom: 20px; /*  Add space below the button */
     line-height: 1.5; /* Adjust line height */
     align-self: flex-end; /* Add this line to align the button to the right */
+    order: 3; /* change order */
 }
 
 
