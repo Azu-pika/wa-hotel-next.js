@@ -350,11 +350,18 @@
     box-sizing: border-box;
     display: flex; /*  Use flexbox for layout */
     flex-direction: column; /* Changed row; column; */
-    align-items: stretch; /* [stretch, flex-start */  
+    align-items: stretch; /* stretch, flex-start, flex-end;(to the right) */  
     justify-content: space-between; /* space-around; Distribute items evenly */
     /*flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
     background-color: #d4dabc;
 
+}
+
+.roomHeader {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
 }
 
 .headingroom {
@@ -483,7 +490,7 @@
 
 
 .checkroomavailabilitybutton {
-    position: static;
+    /*position: static;*/
     box-shadow: 7px 0px 6px rgba(0, 0, 0, 0.1), 0px 5px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     background-color: #246c43;
@@ -504,6 +511,7 @@
     margin-top: 20px;
     margin-bottom: 20px; /*  Add space below the button */
     line-height: 1.5; /* Adjust line height */
+    align-self: flex-end; /* Add this line to align the button to the right */
 }
 
 

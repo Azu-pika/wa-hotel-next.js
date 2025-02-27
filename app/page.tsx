@@ -109,24 +109,27 @@ const LandingPage: NextPage = () => {
 
 
       {/* Rooms */}
+      {/* Rooms */}
       <div className={styles.roomsbigcontainer}>
-        <h2 className={styles.headingroom}>Rooms</h2>
+        <div className={styles.roomHeader}>
+          <h2 className={styles.headingroom}>Rooms</h2>
         
-        <div className={styles.roomContentWrapper}>
-            <div className={styles.roomtextcontainer}>
-                <p className={styles.roomexampletext}>
-                    We take pride in offering serene spaces crafted to provide relaxation and comfort.
-                    Whether you seek breathtaking views, traditional charm, or family-friendly comfort, we have the perfect space for you.
-                </p>
-            </div>
-            
-            <Image 
-                className={styles.exampleroompic} 
-                width={684} 
-                height={405} 
-                alt="Example Room" 
-                src="/images/winged-jedi-UALBOB8e1Kk-unsplash.jpg" 
-            />
+          <div className={styles.roomContentWrapper}>
+              <div className={styles.roomtextcontainer}>
+                  <p className={styles.roomexampletext}>
+                      We take pride in offering serene spaces crafted to provide relaxation and comfort.
+                      Whether you seek breathtaking views, traditional charm, or family-friendly comfort, we have the perfect space for you.
+                  </p>
+              </div>
+              
+              <Image 
+                  className={styles.exampleroompic} 
+                  width={684} 
+                  height={405} 
+                  alt="Example Room" 
+                  src="/images/winged-jedi-UALBOB8e1Kk-unsplash.jpg" 
+              />
+          </div>
         </div>
 
         <div className={styles.roomsContainer}>
@@ -160,6 +163,7 @@ const LandingPage: NextPage = () => {
             <Button onClick={handleCheckAvailability}>Check Room Availability</Button>
         </div>
       </div>
+
 
 
       {/* Restaurant */}
