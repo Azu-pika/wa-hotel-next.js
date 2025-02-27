@@ -346,118 +346,86 @@
 .roomsbigcontainer {
     width: 100%;
     position: relative;
-    padding: 20px;
+    padding: 40px 20px;
     box-sizing: border-box;
-    display: flex; /* [NEW]: Use flexbox for layout */
-    flex-direction: row; /* [NEW]: Arrange items in a row */
-    align-items: stretch; /* [NEW]: Align items vertically */
-    justify-content: space-around; /* [NEW]: Distribute items evenly */
-    flex-wrap: wrap; /* [NEW] Allow items to wrap to the next line if needed */
+    display: flex; /*  Use flexbox for layout */
+    flex-direction: column; /* Changed row; column; */
+    align-items: stretch; /* [stretch, flex-start */  
+    justify-content: space-between; /* space-around; Distribute items evenly */
+    /*flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
     background-color: #d4dabc;
 
 }
 
 .headingroom {
-    width: 205px;
-    position: relative;
+    /*width: 205px;*/
+    /*position: relative;*/
     font-size: 64px;
-    line-height: 48px;
+    line-height: 1.2; /*48px;*/
     font-weight: 600;
     font-family: Lora;
     color: #4b5563;
-    text-align: center;
-    display: inline-block;
-    margin-top: 30px;
+    text-align: left; /*center; */
+    /*display: inline-block;*/
+    /*margin-top: 30px;
+    margin-left: 20px;*/
+    margin-bottom: 30px;
 
 }
-.roomsavailability {
+.roomContentWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
 }
 
+
+.roomtextcontainer {
+    width: 45%; /*556px;*/
+    position: relative; /* from left*/
+    line-height: 1.6; /*29.25px;*/
+    font-family: Lora;
+    color: #374151;
+    font-size: 18px;
+    text-align: left;
+    /*display: flex;
+    align-items: flex-start; /* Change from center to flex-start */
+    /*justify-content: flex-start; /*  Add this line */
+    /*height: 166px;
+    font-size: 18px;
+    padding-left: 20px; /* Add some padding on the left */
+    /*margin-left: 20px; /* Add some margin on the left */
+    order: 1; /* change order */
+}
+
+.roomexampletext {
+    margin: 0;
+}
 
 /* Example room pic(tatami) */
 .exampleroompic {    /* Example room pic(tatami) */
-    position: absolute;
     top: 90px;
     right: 10px;
-    width: 60%; /* Make the image responsive */
+    width: 40%; /* Make the image responsive */
     height: auto; /* Maintain aspect ratio */
     object-fit: cover;
     margin-bottom: 20px; /* Add some space below the image */
     margin-top: 120px;
     position: static; /* remove absolute position */
-
-}
-
-.roomtextcontainer {
-    width: 556px;
-    position: left;
-    line-height: 29.25px;
-    font-family: Lora;
-    color: #374151;
-    text-align: left;
-    display: flex;
-    align-items: flex-start; /* [NEW] Change from center to flex-start */
-    justify-content: flex-start; /* [NEW] Add this line */
-    height: 166px;
-    font-size: 18px;
-    padding-left: 20px; /* [NEW] Add some padding on the left */
-}
-
-.roomexampletext {
-    margin: 0;
-
+    order: 2; /* change order */
 }
 
 
- /* room cards 
-
-
-/*Try start*/
-/* [NEW] CSS for the rooms section */
 .roomsContainer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around; /*space-between;*/
     flex-wrap: wrap;
     padding: 20px;
-    gap: 30px; /* [NEW]: Add gap between room cards */
+    gap: 30px; /* Add gap between room cards */
+    order: 3; /* change order */
 }
 
-/* [NEW] CSS for the room card */
-.roomCard {
-    width: 200px; /* Adjust as needed */
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
 
-/* [NEW] CSS for the room image */
-.roomImage {
-    width: 100%;
-    height: 150px; /* Adjust as needed */
-    object-fit: cover;
-}
-
-/* [NEW] CSS for the room details */
-.roomDetails {
-    padding: 10px;
-}
-
-/* [NEW] CSS for the room title */
-.roomTitle {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-/* [NEW] CSS for the room description */
-.roomDescription {
-    font-size: 14px;
-    color: #555;
-}
-
-/* [NEW] CSS for the images */
+/* CSS for the images */
 .tatamiImage {
     border-radius: 5px;
   }
@@ -475,8 +443,49 @@
   }
 
 
-/*Try End*/
+/* CSS for the room card from/Components/roomcard.tsx*/
+.roomImage {
+    width: 100%;
+    height: 200px; /* Adjust as needed */
+    object-fit: cover;
+}
 
+/* CSS for the room details from/Components/roomcard.tsx*/
+.roomDetails {
+    padding: 10px; /*15px;*/
+}
+
+
+/* CSS for the room title from/Components/roomcard.tsx*/
+.roomTitle {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px; /*10px;*/
+    font-family: Lora;
+}
+
+/* CSS for the room description from/Components/roomcard.tsx*/
+.roomDescription {
+    font-size: 14px;
+    color: #555;
+    font-family: Lora;
+}
+
+
+.roomCard {  /*from/Components/roomcard.tsx*/
+    width: 300px; /* Adjust as needed */
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+
+.checkroomavailabilitybutton {
+    align-self: center;
+    margin-top: 30px;
+}
 
 
 
