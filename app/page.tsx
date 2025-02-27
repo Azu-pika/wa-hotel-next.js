@@ -7,7 +7,7 @@ import { useCallback } from 'react';
 import Image from "next/image";
 import styles from './page.module.css';
 import Button from './Button'; // Import the Client Component
-import RoomCard from '../Components/RoomCard.tsx'; // [NEW] Import the RoomCard component
+import RoomCard from '../Components/RoomCard.tsx'; // Import the RoomCard component
 
 const LandingPage: NextPage = () => {
   const onComponent4ContainerClick = useCallback(() => {
@@ -160,11 +160,6 @@ const LandingPage: NextPage = () => {
             <Button onClick={handleCheckAvailability}>Check Room Availability</Button>
         </div>
       </div>
-
-
-
-
-
 
 
       {/* Restaurant */}

@@ -369,7 +369,7 @@
     /*display: inline-block;*/
     /*margin-top: 30px;
     margin-left: 20px;*/
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 
 }
 .roomContentWrapper {
@@ -398,7 +398,8 @@
 }
 
 .roomexampletext {
-    margin: 0;
+    margin-left: 50px;
+    margin-top: 50px;
 }
 
 /* Example room pic(tatami) */
@@ -408,8 +409,7 @@
     width: 40%; /* Make the image responsive */
     height: auto; /* Maintain aspect ratio */
     object-fit: cover;
-    margin-bottom: 20px; /* Add some space below the image */
-    margin-top: 120px;
+    margin-bottom: 0px; /* Add some space below the image */
     position: static; /* remove absolute position */
     order: 2; /* change order */
 }
@@ -483,19 +483,12 @@
 
 
 .checkroomavailabilitybutton {
-    align-self: center;
-    margin-top: 30px;
-}
-
-
-
-.checkroomavailabilitybutton {
     position: static;
     box-shadow: 7px 0px 6px rgba(0, 0, 0, 0.1), 0px 5px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     background-color: #246c43;
     width: fit-content;
-    height: 45px; /* [NEW]: Set a fixed height */
+    height: 45px; /*  Set a fixed height */
     overflow: hidden;
     display: flex;
     flex-direction: row;
@@ -510,7 +503,7 @@
     font-family: Lora;
     margin-top: 20px;
     margin-bottom: 20px; /*  Add space below the button */
-    line-height: 1.5; /* [NEW]: Adjust line height */
+    line-height: 1.5; /* Adjust line height */
 }
 
 
