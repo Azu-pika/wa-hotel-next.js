@@ -419,6 +419,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 20px;
+    gap: 30px; /* [NEW]: Add gap between room cards */
 }
 
 /* [NEW] CSS for the room card */
@@ -455,6 +456,24 @@
     font-size: 14px;
     color: #555;
 }
+
+/* [NEW] CSS for the images */
+.tatamiImage {
+    border-radius: 5px;
+  }
+  
+  .mountainImage {
+    border-radius: 5px;
+  }
+  
+  .familyImage {
+    border-radius: 5px;
+  }
+  
+  .deluxeImage {
+    border-radius: 5px;
+  }
+
 
 /*Try End*/
 
