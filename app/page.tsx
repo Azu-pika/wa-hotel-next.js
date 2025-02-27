@@ -7,6 +7,7 @@ import { useCallback } from 'react';
 import Image from "next/image";
 import styles from './page.module.css';
 import Button from './Button'; // Import the Client Component
+import RoomCard from '../Components/RoomCard.tsx'; // [NEW] Import the RoomCard component
 
 const LandingPage: NextPage = () => {
   const onComponent4ContainerClick = useCallback(() => {
@@ -109,46 +110,53 @@ const LandingPage: NextPage = () => {
 
       {/* Rooms */}
       <div className={styles.roomsbigcontainer}>
-        <div className={styles.headingroom}>Rooms</div>
-
-        <Image className={styles.exampleroompic} width={684} height={405} alt="" src="/images/winged-jedi-UALBOB8e1Kk-unsplash.jpg" />
-        <div className={styles.roomtextcontainer}>
-          <span>
-            <p>
-              <span className={styles.roomexampletext}>We take pride in offering serene spaces crafted to provide relaxation and comfort.</span>
-            </p>
-            <p>Whether you seek breathtaking views, traditional charm, or family-friendly comfort, we have the perfect space for you.
-            </p>
-          </span>
-        </div>
-
-
-        <div className={styles.checkroomavailabilitybutton}>
-          <Button onClick={handleCheckAvailability}>Check Room Availability</Button>
-        </div>
-
-        <div className={styles.traditionalTatamiRoom} onClick={onComponent4ContainerClick}>
-          <div className={styles.roomheading}>Traditional Tatami Room</div>
-          <div className={styles.tatamiroomtext}>Immerse yourself in authentic Japanese style and simplicity.</div>
-          <Image className={styles.tatamipic} width={400} height={312} alt="" src="/images/s-tsuchiya-Te28pPfLORQ-unsplash.jpg" />
-        </div>
-        <div className={styles.mountainViewRoom}>
-          <div className={styles.mountainroomtext}>Enjoy stunning vistas of the surrounding mountains.</div>
-          <div className={styles.roomheading}>Mountain View Room</div>
-          <Image className={styles.mountainpic} width={558} height={311} alt="" src="/images/ish-consul-ccKvfKSKH-k-unsplash.jpg" />
-        </div>
-        <div className={styles.familySuiteRoom}>
-          <div className={styles.familytext}>Spacious and cozy, perfect for quality time with loved ones.</div>
-          <div className={styles.roomheading}>Family Suite</div>
-          <Image className={styles.familypic} width={413} height={311} alt="" src="/images/reisetopia-fbG4S32ssd8-unsplash.jpg" />
-        </div>
-
-        <div className={styles.deluxeSuiteRoom} onClick={onComponent4ContainerClick}>
-          <div className={styles.deluxetext}>Indulge in luxury with modern amenities and a private retreat.</div>
-          <div className={styles.roomheading}>Deluxe Suite</div>
-          <Image className={styles.deluxepic} width={400} height={311} alt="" src="/images/fabian-kuhne-eksdFRXS28s-unsplash.jpg" />
-        </div>
+      <div className={styles.headingroom}>Rooms</div>
+      
+      <Image 
+        className={styles.exampleroompic} 
+        width={684} 
+        height={405} 
+        alt="" 
+        src="/images/winged-jedi-UALBOB8e1Kk-unsplash.jpg" 
+      />
+      
+      <div className={styles.roomtextcontainer}>
+        <span className={styles.roomexampletext}>
+          We take pride in offering serene spaces crafted to provide relaxation and comfort.
+          Whether you seek breathtaking views, traditional charm, or family-friendly comfort, we have the perfect space for you.
+        </span>
       </div>
+
+      <div className={styles.roomsContainer}>
+        <RoomCard
+            imageSrc="/images/tatami-room.jpg"
+            title="Traditional Tatami Room"
+            description="Immerse yourself in authentic Japanese style and simplicity."
+        />
+        <RoomCard
+            imageSrc="/images/mountain-view.jpg"
+            title="Mountain View Room"
+            description="Enjoy stunning vistas of the surrounding mountains."
+        />
+        <RoomCard
+            imageSrc="/images/family-suite.jpg"
+            title="Family Suite"
+            description="Spacious and cozy, perfect for quality time with loved ones."
+        />
+        <RoomCard
+            imageSrc="/images/deluxe-suite.jpg"
+            title="Deluxe Suite"
+            description="Indulge in luxury with modern amenities and a private retreat."
+        />
+       </div>
+        {/* Cut??*/}
+          {/* Cut finish ?*/}
+      </div>
+
+      <div className={styles.checkroomavailabilitybutton}>
+        <Button onClick={handleCheckAvailability}>Check Room Availability</Button>
+      </div>
+
 
 
 

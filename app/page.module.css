@@ -354,7 +354,6 @@
     justify-content: space-around; /* [NEW]: Distribute items evenly */
     flex-wrap: wrap; /* [NEW] Allow items to wrap to the next line if needed */
     background-color: #d4dabc;
-    height: 1118px;
 
 }
 
@@ -379,19 +378,19 @@
 .exampleroompic {    /* Example room pic(tatami) */
     position: absolute;
     top: 90px;
-    left: 879px;
-    width: 50%; /* Make the image responsive */
+    right: 10px;
+    width: 60%; /* Make the image responsive */
     height: auto; /* Maintain aspect ratio */
     object-fit: cover;
     margin-bottom: 20px; /* Add some space below the image */
-    margin-top: 60px;
+    margin-top: 120px;
     position: static; /* remove absolute position */
 
 }
 
 .roomtextcontainer {
     width: 556px;
-    position: relative;
+    position: left;
     line-height: 29.25px;
     font-family: Lora;
     color: #374151;
@@ -402,9 +401,7 @@
     height: 166px;
     font-size: 18px;
     padding-left: 20px; /* [NEW] Add some padding on the left */
-    box-sizing: border-box; /* [NEW] Include padding in the width */
 }
-
 
 .roomexampletext {
     margin: 0;
@@ -412,164 +409,80 @@
 }
 
 
+ /* room cards 
+
+
+/*Try start*/
+/* [NEW] CSS for the rooms section */
+.roomsContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* [NEW] CSS for the room card */
+.roomCard {
+    width: 200px; /* Adjust as needed */
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* [NEW] CSS for the room image */
+.roomImage {
+    width: 100%;
+    height: 150px; /* Adjust as needed */
+    object-fit: cover;
+}
+
+/* [NEW] CSS for the room details */
+.roomDetails {
+    padding: 10px;
+}
+
+/* [NEW] CSS for the room title */
+.roomTitle {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* [NEW] CSS for the room description */
+.roomDescription {
+    font-size: 14px;
+    color: #555;
+}
+
+/*Try End*/
+
+
+
+
 .checkroomavailabilitybutton {
-    position: static; /*  remove absolute position */
-    width: fit-content; /*幅がおさまる*/
-    top: 1900px;  /*高さ、ポジション決まる*/
-    right: 100px;
+    position: static;
     box-shadow: 7px 0px 6px rgba(0, 0, 0, 0.1), 0px 5px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     background-color: #246c43;
+    width: fit-content;
+    height: 45px; /* [NEW]: Set a fixed height */
     overflow: hidden;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
     padding: 12px 24px;
+    box-sizing: border-box;
     cursor: pointer;
     text-align: center;
     font-size: 24px;
     color: #fff;
+    font-family: Lora;
+    margin-top: 20px;
     margin-bottom: 20px; /*  Add space below the button */
-
-}
-
-
- /* room cards */
-.traditionalTatamiRoom,
-.mountainViewRoom,
-.familySuiteRoom,
-.deluxeSuiteRoom {
-    width: 22%; /* [NEW]: Set a fixed width for the room containers (adjust as needed) */
-    margin-bottom: 20px;
-    position: relative;
-    box-sizing: border-box; /* [NEW]:  Include padding and border in the element's total width and height */
-}
-
-
- /* room tatami */
-.traditionalTatamiRoom {   /* room tatami card */
-    top: 551px;
-    left: 25px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-    background-color: #fff;
-    height: 429px;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-.tatamiroomtext {   /* room tatami text */
-    position: absolute;
-    top: 358px;
-    left: 29px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    width: 352px;
-}
-.roomheading {     /* room card-title */
-
-}
-
-.tatamipic {   /* room tatami picture */
-    position: absolute;
-    top: -1px;
-    left: 0px;
-    width: 400px;
-    height: 312px;
-    object-fit: cover;
-}
-
- /* room Mountain */
-.mountainViewRoom {
-    top: 551px;
-    left: 452px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-    background-color: #fff;
-    height: 429px;
-    overflow: hidden;
-}
-
-.mountainroomtext {
-    position: absolute;
-    top: 358px;
-    left: 29px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    width: 319px;
-}
-
-.mountainpic {    /* room mountain picture */
-    position: absolute;
-    top: 0px;
-    left: -79px;
-    width: 558.1px;
-    height: 311px;
-    object-fit: cover;
-}
-
- /* room family */
-.familySuiteRoom {
-    top: 551px;
-    left: 879px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-    background-color: #fff;
-    height: 429px;
-    overflow: hidden;
-}
-
-.familytext {
-    position: absolute;
-    top: 358px;
-    left: 29px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    width: 327px;
-}
-
-.familypic {    /* room family picture */
-    position: absolute;
-    top: 0px;
-    left: -13px;
-    width: 413px;
-    height: 311px;
-    object-fit: cover;
-}
-
- /* room deluxet */
-.deluxeSuiteRoom {
-    top: 551px;
-    left: 1306px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-    background-color: #fff;
-    height: 429px;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-.deluxetext {
-    position: absolute;
-    top: 358px;
-    left: 29px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    width: 347px;
-}
-
-.deluxepic {    /* room deluxe picture */
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 400px;
-    height: 311px;
-    object-fit: cover;
+    line-height: 1.5; /* [NEW]: Adjust line height */
 }
 
 
