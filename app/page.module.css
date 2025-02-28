@@ -435,19 +435,19 @@
 
 /* CSS for the images */
 .tatamiImage {
-    border-radius: 5px;
+    border-radius: 5px, 5px, 0px, 0px;
   }
   
   .mountainImage {
-    border-radius: 5px;
+    border-radius: 5px, 5px, 0px, 0px;
   }
   
   .familyImage {
-    border-radius: 5px;
+    border-radius: 5px, 5px, 0px, 0px;
   }
   
   .deluxeImage {
-    border-radius: 5px;
+    border-radius: 5px, 5px, 0px, 0px;
   }
 
 
