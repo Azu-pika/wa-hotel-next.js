@@ -169,7 +169,7 @@ const LandingPage: NextPage = () => {
       {/* Restaurant */}
       <div className={styles.restrantbigcontainer}>
         <div className={styles.headingrestaurant}>Restaurant</div>
-        <Image className={styles.restrantexamplepic} width={623} height={498} alt="" src="/images/cuisine.png" />
+        <Image className={styles.restrantexamplepic} width={623} height={498} alt="" src="/images/cuisine.jpg" />
         <Image className={styles.restaurantpic1} width={248} height={322} alt="" src="/images/cody-chan-KaOi0tkTaBA-unsplash.jpg" />
         <Image className={styles.restaurantpic2} width={248} height={322} alt="" src="/images/haley-truong-UcVxV6BN2z8-unsplash.jpg" />
         <Image className={styles.restaurantpic3} width={295} height={322} alt="" src="/images/richard-iwaki-2cpx1N7Us5Q-unsplash.jpg" />
@@ -191,10 +191,6 @@ const LandingPage: NextPage = () => {
 
 
 
-
-
-
-
       {/* Explore */}
       <div className={styles.explorebigcontainer}>
         <div className={styles.exploreheading}>Explore</div>
@@ -202,26 +198,24 @@ const LandingPage: NextPage = () => {
           <p className={styles.exploretext}>Enhance your stay with our special experiences</p>
           <p>Discover extraordinary moments beyond ordinary travel</p>
         </div>
-        <div className={styles.Onsencardcontainer}>
-          <div className={styles.explorecardheading}>Onsen Hot Springs</div>
-          <div className={styles.explorecardtext}>Relax in our natural onsen hot springs, surrounded by stunning scenery. Enjoy mineral-rich waters that soothe your body and mind.</div>
-          <div className={styles.explorecardimagecontainer} />
-          <Image className={styles.exploreonsenpic} width={641} height={427} alt="" src="/images/ben-lim-UHcwyq05_Gk-unsplash.jpg" />
-        </div>
-        <div className={styles.Bamboocardcontainer}>
-          <div className={styles.explorecardheading}>A Walk Through the Bamboo Forest</div>
-          <div className={styles.explorecardtext}>Stroll through serene Bamboo Street, surrounded by towering bamboo and the soothing sounds of nature. A peaceful escape into tranquility.</div>
-          <div className={styles.explorecardimagecontainer} />
-          <Image className={styles.explorebamboopic} width={619} height={412} alt="" src="/images/atanas-malamov-iFZqkkPMtVk-unsplash.jpg" />
-        </div>
-        <div className={styles.zencardcontainer}>
-          <div className={styles.explorecardheading}>Zen Garden</div>
-          <div className={styles.explorecardtext}>Find peace and balance in our tranquil Zen Garden. Surrounded by carefully arranged rocks, soothing water features, and lush greenery, it's the perfect place to relax and meditate.</div>
-          <div className={styles.explorecardimagecontainer} />
-          <Image className={styles.explorezenpic} width={569} height={758} alt="" src="/images/mariko-ebine-vraJfjZgeyo-unsplash.jpg" />
+        <div className={styles.exploreCardsContainer}> {/*  New container for cards */}
+          <RoomCard
+            imageSrc="/images/ben-lim-UHcwyq05_Gk-unsplash.jpg"
+            title="Onsen Hot Springs"
+            description="Relax in our natural onsen hot springs, surrounded by stunning scenery. Enjoy mineral-rich waters that soothe your body and mind."
+          />
+          <RoomCard
+            imageSrc="/images/atanas-malamov-iFZqkkPMtVk-unsplash.jpg"
+            title="A Walk Through the Bamboo Forest"
+            description="Stroll through serene Bamboo Street, surrounded by towering bamboo and the soothing sounds of nature. A peaceful escape into tranquility."
+          />
+          <RoomCard
+            imageSrc="/images/mariko-ebine-vraJfjZgeyo-unsplash.jpg"
+            title="Zen Garden"
+            description="Find peace and balance in our tranquil Zen Garden. Surrounded by carefully arranged rocks, soothing water features, and lush greenery, it's the perfect place to relax and meditate."
+          />
         </div>
       </div>
-    
 
 
 
