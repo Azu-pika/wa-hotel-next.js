@@ -195,24 +195,27 @@ const LandingPage: NextPage = () => {
       <div className={styles.explorebigcontainer}>
         <div className={styles.exploreheading}>Explore</div>
         <div className={styles.exploretextcontainer}>
-          <p className={styles.exploretext}>Enhance your stay with our special experiences</p>
-          <p>Discover extraordinary moments beyond ordinary travel</p>
+          <p className={styles.exploretext}>Enhance your stay with our special experiences<br />
+            Discover extraordinary moments beyond ordinary travel</p>
         </div>
         <div className={styles.exploreCardsContainer}> {/*  New container for cards */}
           <RoomCard
             imageSrc="/images/ben-lim-UHcwyq05_Gk-unsplash.jpg"
             title="Onsen Hot Springs"
             description="Relax in our natural onsen hot springs, surrounded by stunning scenery. Enjoy mineral-rich waters that soothe your body and mind."
+            imageContainerClassName={styles.exploreRoomCardImageContainer}
           />
           <RoomCard
             imageSrc="/images/atanas-malamov-iFZqkkPMtVk-unsplash.jpg"
             title="A Walk Through the Bamboo Forest"
             description="Stroll through serene Bamboo Street, surrounded by towering bamboo and the soothing sounds of nature. A peaceful escape into tranquility."
+            imageContainerClassName={styles.exploreRoomCardImageContainer}
           />
           <RoomCard
             imageSrc="/images/mariko-ebine-vraJfjZgeyo-unsplash.jpg"
             title="Zen Garden"
             description="Find peace and balance in our tranquil Zen Garden. Surrounded by carefully arranged rocks, soothing water features, and lush greenery, it's the perfect place to relax and meditate."
+            imageContainerClassName={styles.exploreRoomCardImageContainer}
           />
         </div>
       </div>
@@ -221,38 +224,48 @@ const LandingPage: NextPage = () => {
 
 
       {/* Footer */}
-      <div className={styles.footerbigcontainer}>
-        <div className={styles.aboutuscontainer}>
-          <div className={styles.aboutusheading}>About Us</div>
-          <div className={styles.aboutustext}>Wa-Ryokan offers an authentic Japanese experience, combining traditional hospitality with modern comforts. Relax in serene rooms, enjoy exquisite dining, and unwind in our peaceful onsen. Your tranquil getaway awaits.</div>
-        </div>
-        <div className={styles.quicklinksheading}>Quick Links</div>
-          <div className={styles.footerquicklinklist}>
-            <div className={styles.componentroom}>
-              <div className={styles.footercomponentext}>Rooms</div>
-            </div>
-            <div className={styles.componentamenities}>
-              <div className={styles.footercomponentext}>Amenities</div>
-            </div>
-            <div className={styles.componentlocation}>
-              <div className={styles.footercomponentext}>Location</div>
-            </div>
-            <div className={styles.componentcontact}>
-              <div className={styles.footercomponentext}>Contact Us</div>
-            </div>
+       {/* Footer */}
+       <div className={styles.footerbigcontainer}>
+        <div className={styles.footerContent}> {/* NEW: flex container */}
+          <div className={styles.aboutuscontainer}>
+            <div className={styles.aboutusheading}>About Us</div>
+            <div className={styles.aboutustext}>Wa-Ryokan offers an authentic Japanese experience, combining traditional hospitality with modern comforts. Relax in serene rooms, enjoy exquisite dining, and unwind in our peaceful onsen. Your tranquil getaway awaits.</div>
           </div>
-        </div>
-        
-        <div className={styles.contactcontainer}>
-           <div className={styles.footercontactheading}>Contact</div>
-           <span className={styles.addressContainer}>
-              <p className={styles.contacttext}>Address: 123456 Sakura Street, Example, Japan</p>
-              <p >Phone: +000 123-456-7890</p>
-              <p >Email: wa-ryokan@example.com</p>
-           </span>
-        </div>
-        <div className={styles.footerrightstext}>© 2335 Japanese Ryokan Example Experience. All rights reserved.</div>
+
+          <div className={styles.quicklinkscontainer}> {/* NEW container */}
+            <div className={styles.quicklinksheading}>Quick Links</div>
+            <div className={styles.footerquicklinklist}>
+              <div className={styles.componentroom}>
+                <div className={styles.footercomponentext}>Rooms & Rates</div> {/* Modified */}
+              </div>
+              <div className={styles.componentamenities}>
+                <div className={styles.footercomponentext}>Amenities</div>
+              </div>
+              <div className={styles.componentlocation}>
+                <div className={styles.footercomponentext}>Location</div>
+              </div>
+              <div className={styles.componentcontact}>
+                <div className={styles.footercomponentext}>Contact Us</div>
+              </div>
+            </div>
+          </div> {/* end of quicklinkscontainer */}
+
+          <div className={styles.contactcontainer}>
+            <div className={styles.footercontactheading}>Contact</div>
+            <div className={styles.addressContainer}> {/* Changed span to div */}
+              <div className={styles.contacttext}>Address: 123456 Sakura Street, Kyoto, Japan</div> {/* Changed p to div */}
+              <div>Phone: +811 123-456-7890</div> {/* Changed p to div */}
+              <div>Email: info@example.cooom</div> {/* Changed p to div */}
+            </div>
+          </div> {/* end of contactcontainer */}
+        </div> {/* end of footerContent */}
+        <div className={styles.footerrightstext}>© 2035 Japanese Ryokan Experience Example. <br />
+        All rights reserved.</div>
+      <div className={styles.footerbottomline}></div>{/* NEW: bottom line */}
+      </div>
+
     </div>
+
 
   );
 };
