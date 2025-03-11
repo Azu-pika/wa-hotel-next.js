@@ -41,26 +41,26 @@ const LandingPage: NextPage = () => {
           <Image className={styles.waicon} width={70} height={70} alt="" src="/images/wa-icon.png" />
           <div className={styles.waryokannamae}>和旅館</div>
         </div>
-        <div className={styles.navigationBar}>
-          <div className={styles.home}>
-            <div className={styles.text5}>Home</div>
+        <div className={styles.navRight}> {/* NEW: flex container */}
+          <div className={styles.navigationBar}>
+            <div className={styles.home}>
+              <div className={styles.text5}>Home</div>
+            </div>
+            <div className={styles.rooms1}>   
+              <div className={styles.text5}>Rooms</div>
+            </div>
+            <div className={styles.restaurant}>     
+              <div className={styles.text5}>Restaurant</div>
+            </div>
+            <div className={styles.explore}>   
+              <div className={styles.text5}>Explore</div>
+            </div>
           </div>
-          <div className={styles.rooms1}>   
-            <div className={styles.text5}>Rooms</div>
+          <div className={styles.booknowbutton} onClick={onComponent4ContainerClick}>
+            <div className={styles.text5}>Book Now</div>
           </div>
-          <div className={styles.restaurant}>     
-            <div className={styles.text5}>Restaurant</div>
-          </div>
-          <div className={styles.explore}>   
-            <div className={styles.text5}>Explore</div>
-          </div>
-        </div>
-        <div className={styles.booknowbutton} onClick={onComponent4ContainerClick}>
-          <div className={styles.text5}>Book Now</div>
         </div>
       </div>
-
-
 
 
 
@@ -108,7 +108,7 @@ const LandingPage: NextPage = () => {
 
 
 
-      {/* Rooms */}
+
       {/* Rooms */}
       <div className={styles.roomsbigcontainer}>
         <div className={styles.roomHeader}>

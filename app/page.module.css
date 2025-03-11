@@ -94,6 +94,13 @@
     padding: 0 20px; /* Add some padding */
 }
 
+
+.navRight {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Vertically align items */
+    gap: 20px; /* Space between the navigation and the button */
+}
+
 .wanamae { /* 和旅館の名前? */
     /*position: absolute; REMOVED: No absolute positioning */
     /*top: calc(50% - 35px); REMOVED: Centering is handled by flexbox */
@@ -133,6 +140,7 @@
     display: flex; /* Use flexbox */
     align-items: center; /* Vertically align items */
     gap: 20px; /* Space between the links */
+    
 }
 
 .home,
