@@ -322,18 +322,18 @@
 }
 @media (max-width: 1500px) {   /* 画面Middleサイズ*/
     .welcomepic1 {
-        left: 5%;
-        width: 80%;
-        top: 13%;
-
+        left: 10%;
+        width: 50%;
+        display: none; /* Hide */
     }
+
     .welcomepic2 {
         bottom: auto;
         width: 90%;
         right: 5%;
         left: 5%;
         width: 45%;
-        Top: 52%;
+        Top: 15%;
     }
 
 }
@@ -347,13 +347,9 @@
 
     }
 
-    .welcomepic1 {
-        left: 10%;
-        width: 50%;
-        display: none; /* Hide */
+    .welcomepic2 {
+        top: 55%; 
     }
-
-
     .welcomepic3 {
         left: 5%;
     }
@@ -389,12 +385,12 @@
     }
 
     .welcomSection {
-        width: 100%;
-        position: relative;
+        min-height: 900px;
+        margin-left: 20px;
+        margin-right: 20px;
 
-    }
-    .waRyokan {
-        
+        position: relative;
+        padding: 0px;  /*Reduced Padding*/
     }
 
 }
