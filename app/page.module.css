@@ -420,16 +420,14 @@
 }
 
 .headingroom {
-    /*width: 205px;*/
-    /*position: relative;*/
+
     font-size: 64px;
     line-height: 1.2; /*48px;*/
     font-weight: 600;
     font-family: Lora;
     color: #4b5563;
     text-align: left; /*center; */
-    /*display: inline-block;*/
-    /*margin-top: 30px;*/
+
     margin-left: 50px;
     margin-bottom: 0px;
 
@@ -441,12 +439,14 @@
 .roomContentWrapper {
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
     margin-bottom: 40px;
+    
 }
 
 
 .roomtextcontainer {
-    width: 45%; /*556px;*/
+    width: 556px; /*556px, 60%;*/
     position: relative; /* from left*/
     line-height: 1.6; /*29.25px;*/
     font-family: Lora;
@@ -461,6 +461,7 @@
     padding-left: 20px; /* Add some padding on the left */
     margin-top: 50px;
     margin-left: 80px; /* Add some margin on the left */
+    margin-right: 50px;
     order: 1; /* change order */
 }
 
@@ -481,6 +482,16 @@
     order: 2; /* change order */
 }
 
+
+@media (max-width: 1100px) {   /* 画面Middleサイズ*/
+    .exampleroompic {   
+        display: none; /* Hide */
+    }
+    .roomContentWrapper {
+        display: flex;
+
+    }
+}
 
 .roomsContainer {
     display: flex;
