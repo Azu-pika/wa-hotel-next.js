@@ -138,24 +138,32 @@ const LandingPage: NextPage = () => {
                 title="Traditional Tatami Room"
                 description="Immerse yourself in authentic Japanese style and simplicity."
                 imageClassName={styles.tatamiImage}  //  style for tatami image
+                width={400}  // NEW PROP
+                height={500} // NEW PROP
             />
             <RoomCard
                 imageSrc="/images/ish-consul-ccKvfKSKH-k-unsplash.jpg"
                 title="Mountain View Room"
                 description="Enjoy stunning vistas of the surrounding mountains."
                 imageClassName={styles.mountainImage}  // style for mountain image
+                width={400}  // NEW PROP
+                height={500} // NEW PROP
             />
             <RoomCard
                 imageSrc="/images/reisetopia-fbG4S32ssd8-unsplash.jpg"
                 title="Family Suite"
                 description="Spacious and cozy, perfect for quality time with loved ones."
                 imageClassName={styles.familyImage}  //  style for family image
+                width={400}  // NEW PROP
+                height={500} // NEW PROP
             />
             <RoomCard
                 imageSrc="/images/fabian-kuhne-eksdFRXS28s-unsplash.jpg"
                 title="Deluxe Suite"
                 description="Indulge in luxury with modern amenities and a private retreat."
                 imageClassName={styles.deluxeImage}  // style for deluxe image
+                width={400}  // NEW PROP
+                height={500} // NEW PROP
             />
         </div>
 
@@ -169,11 +177,12 @@ const LandingPage: NextPage = () => {
       {/* Restaurant */}
       <div className={styles.restrantbigcontainer}>
         <div className={styles.headingrestaurant}>Restaurant</div>
-        <Image className={styles.restrantexamplepic} width={623} height={498} alt="" src="/images/cuisine.jpg" />
-        <Image className={styles.restaurantpic1} width={248} height={322} alt="" src="/images/cody-chan-KaOi0tkTaBA-unsplash.jpg" />
-        <Image className={styles.restaurantpic2} width={248} height={322} alt="" src="/images/haley-truong-UcVxV6BN2z8-unsplash.jpg" />
-        <Image className={styles.restaurantpic3} width={295} height={322} alt="" src="/images/richard-iwaki-2cpx1N7Us5Q-unsplash.jpg" />
-
+        <div className={styles.restaurantImagesContainer}>  {/* NEW: Container for restaurant images */}
+          <Image className={styles.restrantexamplepic} width={623} height={498} alt="" src="/images/cuisine.jpg" />
+          <Image className={styles.restaurantpic1} width={248} height={322} alt="" src="/images/cody-chan-KaOi0tkTaBA-unsplash.jpg" />
+          <Image className={styles.restaurantpic2} width={248} height={322} alt="" src="/images/haley-truong-UcVxV6BN2z8-unsplash.jpg" />
+          <Image className={styles.restaurantpic3} width={295} height={322} alt="" src="/images/richard-iwaki-2cpx1N7Us5Q-unsplash.jpg" />
+        </div> {/* END: Container for restaurant images */}
         <div className={styles.restauranttextcontainer}>
           <span>
             <p>

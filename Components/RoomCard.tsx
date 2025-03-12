@@ -9,17 +9,21 @@ interface RoomCardProps {
   description: string;
   imageClassName?: string;
   imageContainerClassName?: string; // NEW PROP
+  width?: number;   // NEW PROP: width of the image
+  height?: number;  // NEW PROP: height of the image
+
 }
 
-const RoomCard: React.FC<RoomCardProps> = ({ imageSrc, title, description, imageClassName,  imageContainerClassName }) => {
+const RoomCard: React.FC<RoomCardProps> = ({ imageSrc, title, description, imageClassName,  imageContainerClassName, width = 300, height = 200 }) => { // Set default values
+
   return (
     <div className={styles.roomCard}>
       <div className={`${styles.roomImageContainer} ${imageContainerClassName || ''}`}> {/* Apply the new class */}
         <Image
           src={imageSrc}
           alt={title}
-          width={300} // Explicit width
-          height={200} // Explicit height
+          width={width}  // Use dynamic width
+          height={height} // Use dynamic height
           className={`${styles.roomImage} ${imageClassName || ''}`}
         />
         <div className={styles.roomDetails}>
