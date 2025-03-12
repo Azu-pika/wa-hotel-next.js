@@ -218,6 +218,7 @@
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.25);
     margin-bottom: 45px; /* Add space below "Wa-Ryokan" */
     margin-left: 5px; 
+    min-width: 550px; 
 }
 
 .herosubtitle {    /* Hero-sub-title-discover.... */
@@ -228,6 +229,11 @@
     margin-left: 35px; 
 }
 
+
+
+
+/* Welcome */
+
 .welcomSection {
     width: 100%;
     position: relative;
@@ -237,6 +243,7 @@
     color: #374151;
     font-family: Lora;
     overflow: hidden;
+    margin-top: 10px;
 
 }
 
@@ -251,8 +258,8 @@
     text-align: center;
     display: inline-block;
     margin-top: 30px;
-    margin-left: 30px;
-    
+    margin-bottom: 10px;
+        
 }
 
 .welcomepic1,
@@ -261,7 +268,6 @@
     width: 100%;
     max-width: 100%;
     height: auto;
-    object-fit: cover;
 }
 
 .welcomepic1 {
@@ -275,7 +281,7 @@
 .welcomepic2 {
     position: absolute;
     top: 367px;
-    left: 25%;
+    left: 28%;
     width: 20%;
     height: auto;
     max-width: 341px;
@@ -288,17 +294,17 @@
     width: 45%;
     height: auto;
     max-width: 747px;
-    
+    min-width: 700px;
 }
 
 
 .containerherotext {
     position: absolute;
     bottom: 10%;
-    right: 5%;
+    right: 3%;
     width: 40%;
-    max-width: 654px;
     line-height: 29.25px;
+
 }
 
 .herotextimmerse {
@@ -306,50 +312,92 @@
 
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1800px) {  /* 画面MAXサイズ*/
     .welcomepic2 {
-        left: 15%;
+
     }
     .herotextimmerse {
-        width: 50%;
+
     }
 }
-@media (max-width: 768px) {
-    .navigationBar {
-      display: none; /* Hide the navigation bar */
-    }
-    .welcomSection {
-        min-height: 1200px;
-    }
-    .heading2 {
-        font-size: 48px;
-        top: 40px;
-    }
-    .welcomepic1, .welcomepic2 {
-        width: 45%;
-        top: 500px;
-        display: none; /* Hide */
-    }
+@media (max-width: 1500px) {   /* 画面Middleサイズ*/
     .welcomepic1 {
         left: 5%;
+        width: 80%;
+        top: 13%;
+
     }
     .welcomepic2 {
-        left: auto;
+        bottom: auto;
         width: 90%;
         right: 5%;
         left: 5%;
-        top: 150px;
+        width: 45%;
+        Top: 52%;
     }
-    .herotextimmerse {
-        width: 90%;
-        right: 5%;
+
+}
+
+@media (max-width: 1100px) {   /* 画面Middleサイズ*/
+
+    .welcomSection {
+        min-height: 1200px;
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
+
+    .welcomepic1 {
+        left: 10%;
+        width: 50%;
+        display: none; /* Hide */
+    }
+
+
+    .welcomepic3 {
         left: 5%;
-        bottom: 5%;
+    }
+
+
+    .containerherotext {   /*ADD: containerherotext*/
+        bottom: auto;
+        top: 650px; /* Adjust as needed */
+        width: 30%;
+        right: 18%;
+        position: absolute;
+    }
+
+    .herotextimmerse {
+
     }
 }
 
 
+@media (max-width: 800px) /*画面小さいサイズ*/  {
+    .navigationBar {
+        display: none; /* Hide the navigation bar */
+    }
+    .welcomepic2 {
+        display: none; /* Hide */
+    }
+    .containerherotext {   /*ADD: containerherotext*/
+        position: absolute;
+        Bottom: 25%;
+        left: 10%;
+        width: 60%;
+        line-height: 29.25px;
+    }
 
+    .welcomSection {
+        width: 100%;
+        position: relative;
+
+    }
+    .waRyokan {
+        
+    }
+
+}
 
 
 /* [Rooms] */

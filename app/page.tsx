@@ -41,7 +41,7 @@ const LandingPage: NextPage = () => {
           <Image className={styles.waicon} width={70} height={70} alt="" src="/images/wa-icon.png" />
           <div className={styles.waryokannamae}>和旅館</div>
         </div>
-        <div className={styles.navRight}> {/* NEW: flex container */}
+        <div className={styles.navRight}> 
           <div className={styles.navigationBar}>
             <div className={styles.home}>
               <div className={styles.text5}>Home</div>
