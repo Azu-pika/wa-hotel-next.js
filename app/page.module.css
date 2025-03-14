@@ -596,11 +596,10 @@
 .restrantbigcontainer {
     width: 100%;
     position: relative;
-    height: 800px;
     font-size: 18px;
     color: #374151;
     font-family: Lora;
-
+    padding: 40px 40px;
 
 }
 
@@ -618,7 +617,6 @@
     /*margin-top: 30px;*/
     margin-left: 50px;
     margin-bottom: 10px;
-    position: absolute;
     top: 60px;
 
 
@@ -626,25 +624,152 @@
 
 
 .restrantexamplepic {
-    position: absolute;
+    flex-shrink: 0; /* Prevent shrinking */
+
+    width: 50%; /* Take up half the container width */
+    max-width: 700px; /* Limit maximum width for better appearance */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* 30px auto; /*50px; /* Add space below the example picture Add space below the example picture */
+
+    /*position: absolute;
+    position: block; /*relative; /* Change from absolute to relative 
     top: 174px;
     left: 64px;
     width: 623px;
     height: 498px;
     object-fit: cover;
     flex-shrink: 0;
-    
+    */
 }
+
+/* Container for restaurant images */
+.restaurantImagesContainer {
+    display: flex; /* Use flexbox to arrange items */
+    justify-content: column; /* space-between; /* Space out items horizontally */
+    align-items: center; /* Align items vertically */
+    gap: 20px; /* Add space between images */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin-top: 30px; /* Add space above the container to avoid overlap */
+}
+
+.restaurantImagesRow {
+    display: flex; /* Arrange items horizontally */
+    justify-content: center; /* Center-align images in a row */
+    gap: 20px; /* Add space between images */
+  }
+
 
 .restaurantpic1,
 .restaurantpic2,
 .restaurantpic3 {
-    width: 248px; /* ADD: Set fixed width for larger screens */
+    width: calc(33.33% - 20px); /*(16.66% - 20px); /* Adjust width for smaller images */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 300px; /* Optional: Limit maximum width for better appearance */
+    
+    /*width: 248px; /* ADD: Set fixed width for larger screens 
     height: 322px;
     object-fit: cover;
     border: 5px solid black;
-    box-sizing: border-box;
+    box-sizing: border-box;*/
 }
+
+
+.restauranttextcontainer {
+    margin-top: 30px; /* Add space above text container */
+    text-align: left;
+    padding-left: 50px;
+}
+
+
+/*
+    width: 556px; /*556px, 60%;
+    position: relative; /* from left
+    line-height: 1.6; /*29.25px;
+    font-family: Lora;
+    color: #374151;
+    font-size: 18px;
+    text-align: left;
+    margin-top: 30px; /* Add space above the text container */
+
+
+/*
+    position: absolute;
+    bottom: 20%;
+    right: 5%;
+    width: 50%;
+    max-width: 654px;
+    line-height:29.25px; /*1.2; 48px; 29.25px;*/
+
+
+
+.restranttext {
+    top: 495px;
+    left: 10%;
+    line-height: 29.25px;
+
+    align-items: center;
+    width: 703px;
+    height: 186px;
+    position: relative;
+    right: 0;
+}
+
+
+
+
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 768px) {    /*768px*/
+    .restaurantImagesContainer {
+      flex-direction: column; /* Stack images vertically */
+      align-items: center; /* Center images */
+      gap: 20px; /* Maintain spacing between images */  
+      margin-top: 20px;
+      padding-left: unset;
+      padding-right: unset;  
+    }
+  
+    .restaurantpic1,
+    .restaurantpic2,
+    .restaurantpic3 {
+        width: calc(100% - 40px); /* Full width on small screens with spacing adjustments */
+        max-width: unset;
+        margin-bottom: unset;
+        height: auto;
+    }
+    /*
+      width: 100%; /* Full width on small screens 
+      max-width: 300px; /* Optional: Limit max width for better appearance 
+      margin-bottom: 20px; /* Add spacing between stacked images 
+      order: unset; /* Reset order for restaurant pictures */
+      
+    .restrantexamplepic {
+        width: 100%; /* Full width on small screens */
+        margin-bottom: 20px; /* Add space below example picture */
+        order: -1; /* Move example picture to the top of the container */
+        margin-bottom: 20px; /* Add space below example picture */
+        max-width: unset;
+    }
+    .restaurantImagesRow {
+        flex-direction: column; /* Stack images vertically on smaller screens */
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+      }
+
+
+    .restauranttextcontainer {
+        margin-top: 20px; /* Adjust spacing above text container on smaller screens */
+        text-align: center; /* Center-align text for better readability on narrow screens */
+        width: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .restrantbigcontainer {
+        height: auto;
+    }
+
+  }
 
 
 
@@ -652,7 +777,7 @@
     .restaurantpic1,
     .restaurantpic2,
     .restaurantpic3 {
-        display: none;
+        /*display: none;
 
     }
     .restauranttextcontainer {
@@ -662,33 +787,16 @@
 
     }
     .restranttext {
-        Bottom: 10%
+        Bottom: 10%*/
     }
 }
 
-.restauranttextcontainer {
-    position: absolute;
-    bottom: 20%;
-    right: 5%;
-    width: 50%;
-    max-width: 654px;
-    line-height:29.25px; /*1.2; 48px; 29.25px;*/
 
 
-}
 
 
-.restranttext {
-    position: absolute;
-    top: 495px;
-    right: 10%;
-    line-height: 29.25px;
 
-    align-items: center;
-    width: 703px;
-    height: 186px;
 
-}
 
 
 /* [Explore] */
@@ -720,13 +828,21 @@
   }
   
   .exploretextcontainer {
+    width: 556px; /*556px, 60%;*/
+    position: relative; /* from left*/
+    line-height: 1.6; /*29.25px;*/
+    font-family: Lora;
+    color: #374151;
+    font-size: 18px;
+    text-align: left;
     margin-bottom: 30px;
-    margin-left: 50px;
+    margin-left: 80px; /* Add some margin on the left */
     margin-top: 140px;
   }
   
   .exploretext {
-    font-family: Lora;
+    margin-left: 50px;
+    margin-top: 50px;
 
 
   }

@@ -8,6 +8,8 @@ import Image from "next/image";
 import styles from './page.module.css';
 import Button from './Button'; // Import the Client Component
 import RoomCard from '../Components/RoomCard.tsx'; // Import the RoomCard component
+import React from 'react';
+
 
 const LandingPage: NextPage = () => {
   const onComponent4ContainerClick = useCallback(() => {
@@ -173,24 +175,24 @@ const LandingPage: NextPage = () => {
       </div>
 
 
-
       {/* Restaurant */}
       <div className={styles.restrantbigcontainer}>
         <div className={styles.headingrestaurant}>Restaurant</div>
-        <div className={styles.restaurantImagesContainer}>  {/* NEW: Container for restaurant images */}
+
+        <div className={styles.restaurantImagesContainer}>  {/* NEW: Container for restaurant images */}  
           <Image className={styles.restrantexamplepic} width={623} height={498} alt="" src="/images/cuisine.jpg" />
-          <Image className={styles.restaurantpic1} width={248} height={322} alt="" src="/images/cody-chan-KaOi0tkTaBA-unsplash.jpg" />
-          <Image className={styles.restaurantpic2} width={248} height={322} alt="" src="/images/haley-truong-UcVxV6BN2z8-unsplash.jpg" />
-          <Image className={styles.restaurantpic3} width={295} height={322} alt="" src="/images/richard-iwaki-2cpx1N7Us5Q-unsplash.jpg" />
+          {/* Row of Three Pictures */}
+          <div className={styles.restaurantImagesRow}>
+            <Image className={styles.restaurantpic1} width={248} height={322} alt="" src="/images/cody-chan-KaOi0tkTaBA-unsplash.jpg" />
+            <Image className={styles.restaurantpic2} width={248} height={322} alt="" src="/images/haley-truong-UcVxV6BN2z8-unsplash.jpg" />
+            <Image className={styles.restaurantpic3} width={295} height={322} alt="" src="/images/richard-iwaki-2cpx1N7Us5Q-unsplash.jpg" />
+          </div> 
         </div> {/* END: Container for restaurant images */}
+
         <div className={styles.restauranttextcontainer}>
-          <span>
-            <p>
-              <span className={styles.restranttext}>Discover the true essence of Japanese cuisine.</span>
-            </p>
-            <p>Our chefs at Wa-Ryokan prepare dishes that showcase the finest local ingredients, from freshly caught seafood to hand-picked mountain vegetables.
-            </p>
-            <p>Enjoy a meal that nourishes both body and soul.</p>
+          <span className={styles.restranttext}>Discover the true essence of Japanese cuisine. <br />
+              Our chefs at Wa-Ryokan prepare dishes that showcase the finest local ingredients, from freshly caught seafood to hand-picked mountain vegetables.<br />
+              Enjoy a meal that nourishes both body and soul.
           </span>
         </div>
 
@@ -274,11 +276,7 @@ const LandingPage: NextPage = () => {
       </div>
 
     </div>
-
-
   );
 };
 
 export default LandingPage;
-
-
