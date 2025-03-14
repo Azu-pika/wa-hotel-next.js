@@ -190,11 +190,16 @@ const LandingPage: NextPage = () => {
         </div> {/* END: Container for restaurant images */}
 
         <div className={styles.restauranttextcontainer}>
-          <span className={styles.restranttext}>Discover the true essence of Japanese cuisine. <br />
+          <span className={styles.restranttext}>
+              <br />
+              Discover the true essence of Japanese cuisine. <br />
               Our chefs at Wa-Ryokan prepare dishes that showcase the finest local ingredients, from freshly caught seafood to hand-picked mountain vegetables.<br />
               Enjoy a meal that nourishes both body and soul.
           </span>
         </div>
+
+
+
 
       </div>
 
@@ -206,8 +211,8 @@ const LandingPage: NextPage = () => {
       <div className={styles.explorebigcontainer}>
         <div className={styles.exploreheading}>Explore</div>
         <div className={styles.exploretextcontainer}>
-          <p className={styles.exploretext}>Enhance your stay with our special experiences<br />
-            Discover extraordinary moments beyond ordinary travel</p>
+          <p className={styles.exploretext}>Enhance your stay with our special experiences.<br />
+            Discover extraordinary moments beyond ordinary travel.</p>
         </div>
         <div className={styles.exploreCardsContainer}> {/*  New container for cards */}
           <RoomCard

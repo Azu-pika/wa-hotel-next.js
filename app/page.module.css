@@ -409,6 +409,7 @@
     /*flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
     justify-content: space-between;
     background-color: #d4dabc;
+    padding-right: 50px;
 
 }
 
@@ -481,6 +482,7 @@
     margin-bottom: 0px; /* Add some space below the image */
     position: static; /* remove absolute position */
     order: 2; /* change order */
+    margin-left: -100px; /* Shift the image slightly to the left */
 }
 
 
@@ -531,7 +533,8 @@
 
 /* CSS for the room details from/Components/roomcard.tsx*/
 .roomDetails {
-    padding: 10px; /*15px;*/
+    padding: 15px; /*15px;*/
+    Padding-left: 25px;
 }
 
 
@@ -552,9 +555,9 @@
 
 
 .roomCard {  /*from/Components/roomcard.tsx*/
-    width: 400px; /* Room card height */
+    width: 330px; /* Room card height */
     background-color: #f9f9f9;
-    border-radius: 10px;
+    border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
@@ -582,6 +585,7 @@
     font-family: Lora;
     margin-top: 20px;
     margin-bottom: 20px; /*  Add space below the button */
+    margin-right: 20px;
     line-height: 1.5; /* Adjust line height */
     align-self: flex-end; /* Add this line to align the button to the right */
     order: 3; /* change order */
@@ -599,8 +603,11 @@
     font-size: 18px;
     color: #374151;
     font-family: Lora;
-    padding: 40px 40px;
-
+    /*padding-bottom: 100px; /* Add space at the bottom to prevent overlap/ 40px 40px;*/
+    margin-top: 40px;
+    margin-bottom: 80px; /* Add space below the restaurant section */
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 
@@ -615,11 +622,15 @@
     text-align: left; /*center; */
     /*display: inline-block;*/
     /*margin-top: 30px;*/
-    margin-left: 50px;
-    margin-bottom: 10px;
+
+    margin: 20px 50px;
     top: 60px;
 
-
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    margin-top: 15px;
 }
 
 
@@ -627,10 +638,12 @@
     flex-shrink: 0; /* Prevent shrinking */
 
     width: 50%; /* Take up half the container width */
-    max-width: 700px; /* Limit maximum width for better appearance */
+    max-width: 600px; /* Limit maximum width for better appearance */
+    min-width: 550px;
     height: auto; /* Maintain aspect ratio */
     margin-bottom: 20px; /* 30px auto; /*50px; /* Add space below the example picture Add space below the example picture */
-
+    margin-right: 50px;
+    margin-left: 20px;
     /*position: absolute;
     position: block; /*relative; /* Change from absolute to relative 
     top: 174px;
@@ -655,7 +668,7 @@
 .restaurantImagesRow {
     display: flex; /* Arrange items horizontally */
     justify-content: center; /* Center-align images in a row */
-    gap: 20px; /* Add space between images */
+    gap: 4vw; /* Add responsive space between images based on viewport width 25px; /* Add space between images */
   }
 
 
@@ -664,7 +677,8 @@
 .restaurantpic3 {
     width: calc(33.33% - 20px); /*(16.66% - 20px); /* Adjust width for smaller images */
     height: auto; /* Maintain aspect ratio */
-    max-width: 300px; /* Optional: Limit maximum width for better appearance */
+    max-width: 250px; /* Optional: Limit maximum width for better appearance */
+    margin-bottom: 0px;
     
     /*width: 248px; /* ADD: Set fixed width for larger screens 
     height: 322px;
@@ -675,10 +689,53 @@
 
 
 .restauranttextcontainer {
-    margin-top: 30px; /* Add space above text container */
-    text-align: left;
-    padding-left: 50px;
+    width: 80%; /* 40%; /* Adjust width to fit nicely below images */
+    max-width: 700px; /* 800px; /* Optional: Limit maximum width */
+    margin-top: 10px; /* margin: 20px auto; /* Center-align and add spacing */
+    margin-left: auto;
+    margin-right: 100px;
+    line-height: 1.6;
+    font-family: Lora;
+    color: #374151;
+    font-size: 18px;
+    text-align: left; /* Align text to the left */
+    
 }
+/*
+    position: absolute; /* Position relative to the parent container 
+    bottom: 5%; /* Adjust distance from the bottom 
+    right: 5%; /* Adjust distance from the right 
+    width: 50%; /* Set width for better readability 
+    max-width: 654px; /* Optional: Limit maximum width 
+    line-height: 1.6;
+    font-family: Lora;
+    color: #374151;
+    font-size: 18px;
+    text-align: left; /* Align text to the left 
+    background-color: rgba(255, 255, 255, 0.8); /* Add semi-transparent background to improve readability 
+    padding: 20px; /* Add padding inside the text container 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for better visibility 
+    /*
+    width: 703px; /*556px; /*556px, 60%;
+    position: relative; /* from left
+    line-height: 1.6; /*29.25px;
+    font-family: Lora;
+    color: #374151;
+    font-size: 18px;
+    text-align: left;
+    /*display: flex;
+    align-items: flex-start; /* Change from center to flex-start */
+    /*justify-content: flex-start; /*  Add this line */
+    /*height: 166px;
+    font-size: 18px;
+    padding-left: 20px; /* Add some padding on the left 
+    margin-top: 50px;
+    margin-left: auto; /*80px; /* Add some margin on the left 
+    margin-right: auto; /*50px;*/
+
+    /*    
+    margin-top: 30px; /* Add space above text container
+    text-align: left;*/
 
 
 /*
@@ -703,16 +760,25 @@
 
 
 .restranttext {
-    top: 495px;
-    left: 10%;
-    line-height: 29.25px;
+    width: 556px; /*556px, 60%;*/
+    position: relative; /* from left*/
+    line-height: 1.6; /*29.25px;*/
+    font-family: Lora;
+    color: #374151;
+    font-size: 18px;
+    text-align: left;
+    /*display: flex;
+    align-items: flex-start; /* Change from center to flex-start */
+    /*justify-content: flex-start; /*  Add this line */
+    /*height: 166px;
+    font-size: 18px;
+    padding-left: 20px; /* Add some padding on the left */
+    margin-top: 0px;
+    margin-left: 80px; /* Add some margin on the left */
+    margin-right: 50px;
 
-    align-items: center;
-    width: 703px;
-    height: 186px;
-    position: relative;
-    right: 0;
 }
+
 
 
 
@@ -760,10 +826,11 @@
 
     .restauranttextcontainer {
         margin-top: 20px; /* Adjust spacing above text container on smaller screens */
-        text-align: center; /* Center-align text for better readability on narrow screens */
+        text-align: left; /* Center-align text for better readability on narrow screens */
         width: auto;
         padding-left: 10px;
         padding-right: 10px;
+        margin-left: 90px;
     }
     .restrantbigcontainer {
         height: auto;
