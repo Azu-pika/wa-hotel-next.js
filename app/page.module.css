@@ -5,8 +5,6 @@
 .landingPage {    /**/
     overflow: hidden; /* Prevent extra scrollbars */
 }
-
-
  /*top bar*/
 .topBar {     
     width: 100%;
@@ -21,6 +19,8 @@
     align-items: center;         /* Vertically center content */
     padding: 0 20px;             /* Add some padding */
     box-sizing: border-box;      /* Include padding in width */
+    
+
 }
 
 .signin {     /*signin*/
@@ -66,6 +66,7 @@
 
 .text5 {    /*language-signin-nav-button-text*/
     white-space: nowrap;
+    cursor: pointer;
 }
 
 
@@ -257,7 +258,7 @@
     color: #4b5563;
     text-align: center;
     display: inline-block;
-    margin-top: 30px;
+    margin-top: 35px;
     margin-bottom: 10px;
         
 }
@@ -561,6 +562,8 @@
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    cursor: pointer;
+
 }
 
 
@@ -624,6 +627,7 @@
     /*margin-top: 30px;*/
 
     margin: 20px 50px;
+    margin-left: 20px;
     top: 60px;
 
     width: 100%;
