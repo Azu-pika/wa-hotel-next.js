@@ -7,7 +7,7 @@ import type { NextPage } from 'next';
 import Image from "next/image";
 import styles from './page.module.css';
 import Button from './Button'; // Import the Client Component
-import RoomCard from '../Components/RoomCard.tsx'; // Import the RoomCard component
+import RoomCard from '../Components/RoomCard'; // Import the RoomCard component
 import React from 'react';
 
 
