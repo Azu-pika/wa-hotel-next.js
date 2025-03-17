@@ -3,7 +3,7 @@
 'use client';
 
 import type { NextPage } from 'next';
-//import { useCallback } from 'react';//
+//import { useCallback } from 'react';
 import Image from "next/image";
 import styles from './page.module.css';
 import Button from './Button'; // Import the Client Component
@@ -12,7 +12,7 @@ import React from 'react';
 
 
 const LandingPage: NextPage = () => {
-  //const onComponent4ContainerClick = useCallback(() => {//
+  //const onComponent4ContainerClick = useCallback(() => {
   const onComponent4ContainerClick = () => {
     // Add your code here
     console.log('General click handler'); // Example action
