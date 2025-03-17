@@ -103,8 +103,8 @@
 }
 
 .wanamae { /* 和旅館の名前? */
-    /*position: absolute; REMOVED: No absolute positioning */
-    /*top: calc(50% - 35px); REMOVED: Centering is handled by flexbox */
+    /*position: absolute; No absolute positioning */
+    /*top: calc(50% - 35px); Centering is handled by flexbox */
     left: 60px;
     display: flex;
     flex-direction: row;
@@ -132,10 +132,10 @@
 }
 
 .navigationBar {     /*ナビの中の箱*/
-    /*position: absolute; REMOVED: No absolute positioning */
-    /*top: calc(50% - 18px); REMOVED: Centering is handled by flexbox */
-    /*left: 1018px; REMOVED: Positioning handled by flexbox */
-    width: auto; /* CHANGED: Adjust width based on content */
+    /*position: absolute; No absolute positioning */
+    /*top: calc(50% - 18px); Centering is handled by flexbox */
+    /*left: 1018px; Positioning handled by flexbox */
+    width: auto; /*  Adjust width based on content */
     height: 36px;
     font-size: 18px;
     display: flex; /* Use flexbox */
@@ -148,9 +148,9 @@
 .rooms1, 
 .restaurant,
 .explore {  /*ナビの中のもの*/
-    /*position: absolute; REMOVED: No absolute positioning */
-    /*top: 4px; REMOVED: Positioning handled by flexbox */
-    /*left: 12px; REMOVED: Positioning handled by flexbox */
+    /*position: absolute; No absolute positioning */
+    /*top: 4px;  Positioning handled by flexbox */
+    /*left: 12px; Positioning handled by flexbox */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -159,9 +159,9 @@
 }
 
 .booknowbutton {     /*Book Now 青のボタン*/
-    /*position: absolute; REMOVED: No absolute positioning */
-     /*top: calc(50% - 25px); REMOVED: Centering is handled by flexbox */
-     /*left: calc(50% + 667.5px); REMOVED: Positioning handled by flexbox */
+    /*position: absolute; No absolute positioning */
+     /*top: calc(50% - 25px); Centering is handled by flexbox */
+     /*left: calc(50% + 667.5px); Positioning handled by flexbox */
      box-shadow: 4px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 4px 4px -2px rgba(0, 0, 0, 0.1);
      border-radius: 8px;
      background-color: #3d73b5;
@@ -404,7 +404,7 @@
     padding: 40px 20px;
     box-sizing: border-box;
     display: flex; /*  Use flexbox for layout */
-    flex-direction: column; /* Changed row; column; */
+    flex-direction: column; /* low; column; */
     align-items: center; /* Align items to the end (right side) */    
     justify-content: space-between; /* space-around; Distribute items evenly */
     /*flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
@@ -481,7 +481,7 @@
     height: auto; /* Maintain aspect ratio */
     object-fit: cover;
     margin-bottom: 0px; /* Add some space below the image */
-    position: static; /* remove absolute position */
+    position: static; /* absolute position */
     order: 2; /* change order */
     margin-left: -100px; /* Shift the image slightly to the left */
 }
@@ -502,7 +502,7 @@
     justify-content: center; /*space-between;*/
     flex-wrap: wrap;
     padding: 20px;
-    gap: 35px; /* Add gap between room cards */
+    gap: 35px; /* gap between room cards */
     order: 2; /* change order */
 }
 
@@ -587,10 +587,10 @@
     color: #fff;
     font-family: Lora;
     margin-top: 20px;
-    margin-bottom: 20px; /*  Add space below the button */
+    margin-bottom: 20px; /*  space below the button */
     margin-right: 20px;
     line-height: 1.5; /* Adjust line height */
-    align-self: flex-end; /* Add this line to align the button to the right */
+    align-self: flex-end; /* this line to align the button to the right */
     order: 3; /* change order */
 }
 
@@ -606,9 +606,9 @@
     font-size: 18px;
     color: #374151;
     font-family: Lora;
-    /*padding-bottom: 100px; /* Add space at the bottom to prevent overlap/ 40px 40px;*/
+    /*padding-bottom: 100px; /* space at the bottom to prevent overlap/ 40px 40px;*/
     margin-top: 40px;
-    margin-bottom: 80px; /* Add space below the restaurant section */
+    margin-bottom: 80px; /* space below the restaurant section */
     margin-left: 50px;
     margin-right: 50px;
 }
@@ -645,7 +645,7 @@
     max-width: 600px; /* Limit maximum width for better appearance */
     min-width: 550px;
     height: auto; /* Maintain aspect ratio */
-    margin-bottom: 20px; /* 30px auto; /*50px; /* Add space below the example picture Add space below the example picture */
+    margin-bottom: 20px; /* 30px auto; /*50px; /* space below the example picture Add space below the example picture */
     margin-right: 50px;
     margin-left: 20px;
     /*position: absolute;
@@ -664,9 +664,9 @@
     display: flex; /* Use flexbox to arrange items */
     justify-content: column; /* space-between; /* Space out items horizontally */
     align-items: center; /* Align items vertically */
-    gap: 20px; /* Add space between images */
+    gap: 20px; /* space between images */
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    margin-top: 30px; /* Add space above the container to avoid overlap */
+    margin-top: 30px; /* space above the container to avoid overlap */
 }
 
 .restaurantImagesRow {
@@ -878,7 +878,7 @@
     background-color: #d4dabc;
     padding: 20px; /* Add padding around the container */
     box-sizing: border-box;
-    margin-top: 20px; /* NEW: Add top margin to create space above the heading */
+    margin-top: 20px; /*  Add top margin to create space above the heading */
   }
   
   .exploreheading {
@@ -918,7 +918,7 @@
 
   }
   
-  /* New container to hold the cards in a row */
+  /* container to hold the cards in a row */
   .exploreCardsContainer {
     display: flex;
     flex-wrap: wrap; /* Allow cards to wrap to the next line */
@@ -964,10 +964,10 @@
     box-sizing: border-box;
     font-family: Lora;
     color: #555;
-    position: relative; /* NEW: relative position for bottom line */
+    position: relative; /* relative position for bottom line */
 }
 
-.footerContent { /* NEW: flex container */
+.footerContent { /* flex container */
     display: flex;
     justify-content: space-between; /* Distribute items evenly */
     padding: 20px;
@@ -977,7 +977,7 @@
     width: 30%; /* Adjust width as needed */
 }
 
-.quicklinkscontainer { /* NEW container */
+.quicklinkscontainer { /* container */
     width: 20%; /* Adjust width as needed */
 }
 
@@ -1013,7 +1013,7 @@
     text-decoration: none;
 }
 
-.addressContainer div { /* Changed p to div */
+.addressContainer div { /* p to div */
     margin-bottom: 5px;
 }
 
@@ -1024,7 +1024,7 @@
     color: #777;
 }
 
-.footerbottomline { /* NEW: bottom line */
+.footerbottomline { /* bottom line */
     position: absolute;
     bottom: 0;
     left: 0;

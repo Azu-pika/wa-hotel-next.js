@@ -65,9 +65,6 @@ const LandingPage: NextPage = () => {
       </div>
 
 
-
-
-
       {/* Welcome Section */}
       {/* Wa-Ryokan */}
       <div className={styles.waRyokan}>
@@ -140,32 +137,32 @@ const LandingPage: NextPage = () => {
                 title="Traditional Tatami Room"
                 description="Immerse yourself in authentic Japanese style and simplicity."
                 imageClassName={styles.tatamiImage}  //  style for tatami image
-                width={400}  // NEW PROP
-                height={500} // NEW PROP
+                width={400}  //
+                height={500} // 
             />
             <RoomCard
                 imageSrc="/images/ish-consul-ccKvfKSKH-k-unsplash.jpg"
                 title="Mountain View Room"
                 description="Enjoy stunning vistas of the surrounding mountains."
                 imageClassName={styles.mountainImage}  // style for mountain image
-                width={400}  // NEW PROP
-                height={500} // NEW PROP
+                width={400}  // 
+                height={500} //
             />
             <RoomCard
                 imageSrc="/images/reisetopia-fbG4S32ssd8-unsplash.jpg"
                 title="Family Suite"
                 description="Spacious and cozy, perfect for quality time with loved ones."
                 imageClassName={styles.familyImage}  //  style for family image
-                width={400}  // NEW PROP
-                height={500} // NEW PROP
+                width={400}  // 
+                height={500} //
             />
             <RoomCard
                 imageSrc="/images/fabian-kuhne-eksdFRXS28s-unsplash.jpg"
                 title="Deluxe Suite"
                 description="Indulge in luxury with modern amenities and a private retreat."
                 imageClassName={styles.deluxeImage}  // style for deluxe image
-                width={400}  // NEW PROP
-                height={500} // NEW PROP
+                width={400}  // 
+                height={500} // 
             />
         </div>
 
@@ -179,7 +176,7 @@ const LandingPage: NextPage = () => {
       <div className={styles.restrantbigcontainer}>
         <div className={styles.headingrestaurant}>Restaurant</div>
 
-        <div className={styles.restaurantImagesContainer}>  {/* NEW: Container for restaurant images */}  
+        <div className={styles.restaurantImagesContainer}>  {/* Container for restaurant images */}  
           <Image className={styles.restrantexamplepic} width={623} height={498} alt="" src="/images/cuisine.jpg" />
           {/* Row of Three Pictures */}
           <div className={styles.restaurantImagesRow}>
@@ -197,13 +194,7 @@ const LandingPage: NextPage = () => {
               Enjoy a meal that nourishes both body and soul.
           </span>
         </div>
-
-
-
-
       </div>
-
-
 
 
 
@@ -214,7 +205,7 @@ const LandingPage: NextPage = () => {
           <p className={styles.exploretext}>Enhance your stay with our special experiences.<br />
             Discover extraordinary moments beyond ordinary travel.</p>
         </div>
-        <div className={styles.exploreCardsContainer}> {/*  New container for cards */}
+        <div className={styles.exploreCardsContainer}> {/* container for cards */}
           <RoomCard
             imageSrc="/images/ben-lim-UHcwyq05_Gk-unsplash.jpg"
             title="Onsen Hot Springs"
@@ -242,13 +233,13 @@ const LandingPage: NextPage = () => {
       {/* Footer */}
        {/* Footer */}
        <div className={styles.footerbigcontainer}>
-        <div className={styles.footerContent}> {/* NEW: flex container */}
+        <div className={styles.footerContent}> {/* flex container */}
           <div className={styles.aboutuscontainer}>
             <div className={styles.aboutusheading}>About Us</div>
             <div className={styles.aboutustext}>Wa-Ryokan offers an authentic Japanese experience, combining traditional hospitality with modern comforts. Relax in serene rooms, enjoy exquisite dining, and unwind in our peaceful onsen. Your tranquil getaway awaits.</div>
           </div>
 
-          <div className={styles.quicklinkscontainer}> {/* NEW container */}
+          <div className={styles.quicklinkscontainer}> {/* container */}
             <div className={styles.quicklinksheading}>Quick Links</div>
             <div className={styles.footerquicklinklist}>
               <div className={styles.componentroom}>
@@ -268,16 +259,16 @@ const LandingPage: NextPage = () => {
 
           <div className={styles.contactcontainer}>
             <div className={styles.footercontactheading}>Contact</div>
-            <div className={styles.addressContainer}> {/* Changed span to div */}
-              <div className={styles.contacttext}>Address: 123456 Sakura Street, Kyoto, Japan</div> {/* Changed p to div */}
-              <div>Phone: +811 123-456-7890</div> {/* Changed p to div */}
-              <div>Email: info@example.cooom</div> {/* Changed p to div */}
+            <div className={styles.addressContainer}> {/* span to div */}
+              <div className={styles.contacttext}>Address: 123456 Sakura Street, Kyoto, Japan</div> {/* p to div */}
+              <div>Phone: +811 123-456-7890</div> {/* p to div */}
+              <div>Email: info@example.cooom</div> {/* p to div */}
             </div>
           </div> {/* end of contactcontainer */}
         </div> {/* end of footerContent */}
         <div className={styles.footerrightstext}>© 2035 Japanese Ryokan Experience Example. <br />
         All rights reserved.</div>
-      <div className={styles.footerbottomline}></div>{/* NEW: bottom line */}
+      <div className={styles.footerbottomline}></div>{/*  bottom line */}
       </div>
 
     </div>

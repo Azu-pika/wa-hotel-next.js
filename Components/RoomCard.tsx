@@ -8,9 +8,9 @@ interface RoomCardProps {
   title: string;
   description: string;
   imageClassName?: string;
-  imageContainerClassName?: string; // NEW PROP
-  width?: number;   // NEW PROP: width of the image
-  height?: number;  // NEW PROP: height of the image
+  imageContainerClassName?: string; //  PROP
+  width?: number;   // PROP: width of the image
+  height?: number;  // PROP: height of the image
 
 }
 
