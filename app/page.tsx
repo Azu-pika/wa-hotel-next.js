@@ -15,7 +15,7 @@ const LandingPage: NextPage = () => {
   const onComponent4ContainerClick = () => {
     // Add your code here
     console.log('General click handler'); // Example action
-  }, []);
+  };
 
   const handleCheckAvailability = () => {
     // Add your code here to handle checking availability
