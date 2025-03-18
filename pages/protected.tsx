@@ -2,7 +2,8 @@ import { useSession } from 'next-auth/react';
 import { useRouter } from 'next/router';
 
 export default function ProtectedPage() {
-  const { data: session, status } = useSession();
+  //const { data: session, status } = useSession();
+  const { status } = useSession();
   const router = useRouter();
 
   // Show a loading state while checking authentication

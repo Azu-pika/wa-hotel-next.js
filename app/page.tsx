@@ -3,7 +3,8 @@
 'use client';
 
 import type { NextPage } from 'next';
-import { useRouter } from 'next/navigation';
+// import { useRouter } from 'next/navigation';
+import { useRouter } from 'next/router';
 
 import Image from "next/image";
 import styles from './page.module.css';
@@ -14,10 +15,10 @@ import React from 'react';
 
 const LandingPage: NextPage = () => {
   const router = useRouter();
-  const onComponent4ContainerClick = () => {
+  //const onComponent4ContainerClick = () => {
     // Add your code here
-    console.log('General click handler'); // Example action
-  };
+    //console.log('General click handler'); // Example action
+  //};
 
   const handleCheckAvailability = () => {
     // Add your code here to handle checking availability
