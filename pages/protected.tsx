@@ -1,23 +1,27 @@
+'use client';
+
 import { useSession } from 'next-auth/react';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
+import { useEffect } from 'react';
 
 export default function ProtectedPage() {
-  //const { data: session, status } = useSession();
-  const { status } = useSession();
+  const { data: session, status } = useSession();
   const router = useRouter();
 
-  // Show a loading state while checking authentication
+  useEffect(() => {
+    if (status === 'loading') return; // Do nothing while loading
+    if (!session) router.push('/login');
+  }, [session, status, router]);
+
   if (status === 'loading') {
     return <p>Loading...</p>;
   }
 
-  // Redirect unauthenticated users to the login page
-  if (status === 'unauthenticated') {
-    router.push('/login');
-    return null;
+  if (!session) {
+    return null; // Render nothing while redirecting
   }
 
-  // Render the protected content for authenticated users
+  // Render the protected content
   return (
     <div>
       <h1>Welcome to the Protected Page</h1>
