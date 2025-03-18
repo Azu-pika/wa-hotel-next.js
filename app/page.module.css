@@ -1,6 +1,29 @@
 /* page.module.css */
 
 
+.loginContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+  
+.googleButton {
+    background-color: #4285F4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+  
+
+
+
+
+
 /* General Styles */
 .landingPage {    /**/
     overflow: hidden; /* Prevent extra scrollbars */

@@ -1,7 +1,7 @@
 // RoomCard.tsx
 import React from 'react';
 import Image from 'next/image';
-import styles from '../app/page.module.css';
+import styles from '../page.module.css';
 
 interface RoomCardProps {
   imageSrc: string;

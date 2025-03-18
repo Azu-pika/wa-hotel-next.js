@@ -3,15 +3,17 @@
 'use client';
 
 import type { NextPage } from 'next';
+import { useRouter } from 'next/navigation';
 
 import Image from "next/image";
 import styles from './page.module.css';
 import Button from './Button'; // Import the Client Component
-import RoomCard from '../Components/RoomCard'; // Import the RoomCard component
+import RoomCard from './Components/RoomCard'; // Import the RoomCard component
 import React from 'react';
 
 
 const LandingPage: NextPage = () => {
+  const router = useRouter();
   const onComponent4ContainerClick = () => {
     // Add your code here
     console.log('General click handler'); // Example action
@@ -21,15 +23,20 @@ const LandingPage: NextPage = () => {
     // Add your code here to handle checking availability
     alert('Checking availability!'); // Example action
   };
+  const handleNavigation = (path: string) => {
+    router.push(path);
+  };
+  
 
   return (    
     <div className={styles.landingPage}>
       {/* Top Bar */}
       <div className={styles.topBar}>
-       <div className={styles.signin} onClick={onComponent4ContainerClick}>
-          <Image className={styles.signinicon} width={20} height={20} alt="" src="/images/login-icon.png" />
-          <div className={styles.text5}>Sign in or Join</div>
-        </div>
+      <div className={styles.signin} onClick={() => router.push('/login')}>
+        <Image className={styles.signinicon} width={20} height={20} alt="" src="/images/login-icon.png" />
+        <div className={styles.text5}>Sign in or Join</div>
+      </div>
+
         <div className={styles.language}>
           <Image className={styles.componenticon} width={20} height={20} alt="" src="/images/language-icon.png" />
           <div className={styles.text5}>Languages</div>
@@ -45,20 +52,20 @@ const LandingPage: NextPage = () => {
         </div>
         <div className={styles.navRight}> 
           <div className={styles.navigationBar}>
-            <div className={styles.home}>
+            <div className={styles.home} onClick={() => handleNavigation('/')}>
               <div className={styles.text5}>Home</div>
             </div>
-            <div className={styles.rooms1}>   
+            <div className={styles.rooms1} onClick={() => handleNavigation('/rooms')}>   
               <div className={styles.text5}>Rooms</div>
             </div>
-            <div className={styles.restaurant}>     
+            <div className={styles.restaurant} onClick={() => handleNavigation('/restaurant')}>     
               <div className={styles.text5}>Restaurant</div>
             </div>
-            <div className={styles.explore}>   
+            <div className={styles.explore} onClick={() => handleNavigation('/explore')}>   
               <div className={styles.text5}>Explore</div>
             </div>
           </div>
-          <div className={styles.booknowbutton} onClick={onComponent4ContainerClick}>
+          <div className={styles.booknowbutton} onClick={() => router.push('/booking')}>
             <div className={styles.text5}>Book Now</div>
           </div>
         </div>
